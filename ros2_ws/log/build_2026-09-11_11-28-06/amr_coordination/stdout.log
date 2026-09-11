@@ -1,0 +1,27 @@
+running develop
+running egg_info
+writing amr_coordination.egg-info/PKG-INFO
+writing dependency_links to amr_coordination.egg-info/dependency_links.txt
+writing entry points to amr_coordination.egg-info/entry_points.txt
+writing requirements to amr_coordination.egg-info/requires.txt
+writing top-level names to amr_coordination.egg-info/top_level.txt
+reading manifest file 'amr_coordination.egg-info/SOURCES.txt'
+writing manifest file 'amr_coordination.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages/amr-coordination.egg-link (link to .)
+Installing choke_negotiator script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+Installing conflict_detector script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+Installing goal_dispatcher script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+Installing goal_sequencer script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+Installing metrics_logger script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+Installing obstacle_relay script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+Installing path_sharer script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+
+Installed /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination
+running symlink_data
+symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/resource/amr_coordination -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/ament_index/resource_index/packages
+symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/package.xml -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination
+symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/launch/baseline.launch.py -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/launch/coordination.launch.py -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/config/waypoints.yaml -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/config
+symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/config/chokepoint.yaml -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/config

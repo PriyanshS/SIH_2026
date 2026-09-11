@@ -1,0 +1,5 @@
+=== RESULTS (coordinated) ===
+robot1: 115.2s
+robot2: 69.8s
+robot3: 299.4s
+Total (slowest): 299.4s

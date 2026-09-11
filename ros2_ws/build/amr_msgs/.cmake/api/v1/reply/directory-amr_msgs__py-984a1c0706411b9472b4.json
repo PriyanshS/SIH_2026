@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "amr_msgs__py",
+		"source" : "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/amr_msgs__py"
+	}
+}

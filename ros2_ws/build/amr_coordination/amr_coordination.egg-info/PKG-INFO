@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: amr-coordination
+Version: 0.1.0
+Summary: Decentralized coordination nodes for warehouse AMR fleet
+Maintainer: SIH Team
+Maintainer-email: team@sih.org
+License: Apache-2.0

@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from amr_msgs/msg/DetectedObstacle.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "geometry_msgs/msg/Point.idl"
+
+module amr_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Dynamic obstacle detected by a robot and relayed to peers")
+    struct DetectedObstacle {
+      string reporter_id;
+
+      geometry_msgs::msg::Point position;
+
+      double radius;
+
+      builtin_interfaces::msg::Time stamp;
+
+      double ttl;
+    };
+  };
+};

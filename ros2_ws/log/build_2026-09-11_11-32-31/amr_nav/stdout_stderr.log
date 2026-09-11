@@ -1,0 +1,21 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/config/nav2_params.yaml
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/maps/warehouse_map.pgm
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/maps/warehouse_map.yaml
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/launch/robot_nav.launch.py
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/ament_index/resource_index/package_run_dependencies/amr_nav
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/ament_index/resource_index/parent_prefix_path/amr_nav
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/environment/path.sh
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/environment/path.dsv
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/local_setup.bash
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/local_setup.sh
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/local_setup.zsh
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/local_setup.dsv
+-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.dsv
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/ament_index/resource_index/packages/amr_nav
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/cmake/amr_navConfig.cmake
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/cmake/amr_navConfig-version.cmake
+-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.xml

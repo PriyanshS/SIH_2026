@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.so" "TARGETS" "amr_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/amr_msgs")

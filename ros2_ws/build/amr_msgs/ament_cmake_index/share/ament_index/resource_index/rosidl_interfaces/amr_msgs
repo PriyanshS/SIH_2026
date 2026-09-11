@@ -1,0 +1,8 @@
+msg/ChokeRequest.idl
+msg/ChokeRequest.msg
+msg/DetectedObstacle.idl
+msg/DetectedObstacle.msg
+msg/RobotPlan.idl
+msg/RobotPlan.msg
+msg/RobotStatus.idl
+msg/RobotStatus.msg

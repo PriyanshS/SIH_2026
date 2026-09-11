@@ -1,0 +1,1 @@
+/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo/ament_cmake_environment_hooks/local_setup.bash

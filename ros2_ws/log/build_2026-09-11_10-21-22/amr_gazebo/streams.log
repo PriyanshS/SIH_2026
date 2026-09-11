@@ -1,0 +1,27 @@
+[0.008s] Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo -- -j28 -l28
+[0.049s] Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo -- -j28 -l28
+[0.050s] Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo
+[0.056s] -- Install configuration: ""
+[0.057s] -- Execute custom install script
+[0.057s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/worlds/warehouse.sdf
+[0.057s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/models/amr_robot/model.config
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/models/amr_robot/model.sdf
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/launch/sim_world.launch.py
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/config/bridge_params.yaml
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/rviz/multi_robot.rviz
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/ament_index/resource_index/package_run_dependencies/amr_gazebo
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/ament_index/resource_index/parent_prefix_path/amr_gazebo
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/environment/ament_prefix_path.sh
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/environment/ament_prefix_path.dsv
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/environment/path.sh
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/environment/path.dsv
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/local_setup.bash
+[0.058s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/local_setup.sh
+[0.059s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/local_setup.zsh
+[0.059s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/local_setup.dsv
+[0.059s] -- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.dsv
+[0.066s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/ament_index/resource_index/packages/amr_gazebo
+[0.066s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/cmake/amr_gazeboConfig.cmake
+[0.066s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/cmake/amr_gazeboConfig-version.cmake
+[0.066s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.xml
+[0.067s] Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo

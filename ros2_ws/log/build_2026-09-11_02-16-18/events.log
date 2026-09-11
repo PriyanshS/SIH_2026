@@ -1,0 +1,346 @@
+[0.000000] (-) TimerEvent: {}
+[0.000289] (-) JobUnselected: {'identifier': 'amr_bringup'}
+[0.000328] (-) JobUnselected: {'identifier': 'amr_coordination'}
+[0.000342] (-) JobUnselected: {'identifier': 'amr_gazebo'}
+[0.000352] (-) JobUnselected: {'identifier': 'amr_nav'}
+[0.000361] (amr_msgs) JobQueued: {'identifier': 'amr_msgs', 'dependencies': OrderedDict()}
+[0.000371] (amr_msgs) JobStarted: {'identifier': 'amr_msgs'}
+[0.008500] (amr_msgs) JobProgress: {'identifier': 'amr_msgs', 'progress': 'cmake'}
+[0.009001] (amr_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs'], 'cwd': '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/neer', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'neer', 'ANTIGRAVITY_SOURCE_METADATA': '{"tool":{"conversationId":"e9608b14-0ed8-47b3-87bf-5b954807982c","stepIndex":99,"toolCall":{"id":"toolu_vrtx_0193p1QX7LSUTwC7QoURZ8Gx","name":"run_command","argumentsJson":"{\\"CommandLine\\":\\"source /opt/ros/jazzy/setup.bash \\\\u0026\\\\u0026 colcon build --symlink-install --packages-select amr_msgs 2\\\\u003e\\\\u00261\\",\\"Cwd\\":\\"/home/neer/Desktop/SIH/ros2_ws\\",\\"WaitMsBeforeAsync\\":10000,\\"toolAction\\":\\"Building amr_msgs\\",\\"toolSummary\\":\\"Message package build\\"}","originalName":"run_command"}}}', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/opt/antigravity-ide/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'ANTIGRAVITY_AGENTAPI_EXE': '/opt/antigravity-ide/resources/app/extensions/antigravity/bin/language_server_linux_x64', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/neer', 'CHROME_DESKTOP': 'antigravity-ide.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-310fea30-1.10-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/home/neer/.local/share/applications/antigravity-ide.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2529', 'ANTIGRAVITY_SAFECLIS_SOURCE': '/home/neer/.gemini/antigravity-ide/bin/safeclis/src', 'SYSTEMD_EXEC_PID': '2914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ANTIGRAVITY_AGENT': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8211', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/neer/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'neer', 'JOURNAL_STREAM': '10:36222', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'neer', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'ANTIGRAVITY_LS_VERSION': 'ide-2.4.5', 'ANTIGRAVITY_EDITOR_APP_ROOT': '/opt/antigravity-ide/resources/app', 'PATH': '/home/neer/.gemini/antigravity-ide/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Neer:@/tmp/.ICE-unix/2871,unix/Neer:/tmp/.ICE-unix/2871', 'INVOCATION_ID': 'cb330d5cfbdd48508fd09178d9abf4b7', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'ANTIGRAVITY_CONVERSATION_ID': 'e9608b14-0ed8-47b3-87bf-5b954807982c', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ANTIGRAVITY_LS_ADDRESS': 'localhost:37439', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'ANTIGRAVITY_TRAJECTORY_ID': 'b7d79ea6-fa40-42f0-9a65-f9a27acc9a7c', 'PWD': '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/neer/.config/Antigravity IDE/CachedData/ecfbad74d93962fc8ca485d93ab9b4f3d4cb6cf8', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'ANTIGRAVITY_CSRF_TOKEN': '17e70be8-05bb-4935-a8d4-39ccfcce2a9f', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '8211'}), 'shell': False}
+[0.099575] (-) TimerEvent: {}
+[0.180201] (amr_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199688] (-) TimerEvent: {}
+[0.300075] (-) TimerEvent: {}
+[0.305832] (amr_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.333033] (amr_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400272] (-) TimerEvent: {}
+[0.452207] (amr_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.462648] (amr_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.463171] (amr_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.463949] (amr_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.477861] (amr_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500356] (-) TimerEvent: {}
+[0.598624] (amr_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.600426] (-) TimerEvent: {}
+[0.606206] (amr_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.606470] (amr_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.606806] (amr_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.613534] (amr_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.700628] (-) TimerEvent: {}
+[0.751898] (amr_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.800834] (-) TimerEvent: {}
+[0.821727] (amr_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.873465] (amr_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.882927] (amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.901037] (-) TimerEvent: {}
+[0.947946] (amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.995868] (amr_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.000486] (amr_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.4 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[1.001099] (-) TimerEvent: {}
+[1.016323] (amr_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[1.051110] (amr_msgs) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[1.101448] (-) TimerEvent: {}
+[1.201674] (-) TimerEvent: {}
+[1.302024] (-) TimerEvent: {}
+[1.402380] (-) TimerEvent: {}
+[1.502696] (-) TimerEvent: {}
+[1.603099] (-) TimerEvent: {}
+[1.662421] (amr_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.703304] (-) TimerEvent: {}
+[1.803601] (-) TimerEvent: {}
+[1.904007] (-) TimerEvent: {}
+[2.004383] (-) TimerEvent: {}
+[2.104802] (-) TimerEvent: {}
+[2.156268] (amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.204977] (-) TimerEvent: {}
+[2.305228] (-) TimerEvent: {}
+[2.405462] (-) TimerEvent: {}
+[2.505876] (-) TimerEvent: {}
+[2.606190] (-) TimerEvent: {}
+[2.706469] (-) TimerEvent: {}
+[2.806764] (-) TimerEvent: {}
+[2.826795] (amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.833748] (amr_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.906981] (-) TimerEvent: {}
+[2.975511] (amr_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[3.007186] (-) TimerEvent: {}
+[3.107452] (-) TimerEvent: {}
+[3.207729] (-) TimerEvent: {}
+[3.308063] (-) TimerEvent: {}
+[3.368394] (amr_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[3.408251] (-) TimerEvent: {}
+[3.464877] (amr_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.476332] (amr_msgs) StdoutLine: {'line': b'-- Configuring done (3.5s)\n'}
+[3.506380] (amr_msgs) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.508364] (-) TimerEvent: {}
+[3.515485] (amr_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs\n'}
+[3.522853] (amr_msgs) CommandEnded: {'returncode': 0}
+[3.524028] (amr_msgs) JobProgress: {'identifier': 'amr_msgs', 'progress': 'build'}
+[3.524327] (amr_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs', '--', '-j28', '-l28'], 'cwd': '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/neer', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'neer', 'ANTIGRAVITY_SOURCE_METADATA': '{"tool":{"conversationId":"e9608b14-0ed8-47b3-87bf-5b954807982c","stepIndex":99,"toolCall":{"id":"toolu_vrtx_0193p1QX7LSUTwC7QoURZ8Gx","name":"run_command","argumentsJson":"{\\"CommandLine\\":\\"source /opt/ros/jazzy/setup.bash \\\\u0026\\\\u0026 colcon build --symlink-install --packages-select amr_msgs 2\\\\u003e\\\\u00261\\",\\"Cwd\\":\\"/home/neer/Desktop/SIH/ros2_ws\\",\\"WaitMsBeforeAsync\\":10000,\\"toolAction\\":\\"Building amr_msgs\\",\\"toolSummary\\":\\"Message package build\\"}","originalName":"run_command"}}}', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/opt/antigravity-ide/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'ANTIGRAVITY_AGENTAPI_EXE': '/opt/antigravity-ide/resources/app/extensions/antigravity/bin/language_server_linux_x64', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/neer', 'CHROME_DESKTOP': 'antigravity-ide.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-310fea30-1.10-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/home/neer/.local/share/applications/antigravity-ide.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2529', 'ANTIGRAVITY_SAFECLIS_SOURCE': '/home/neer/.gemini/antigravity-ide/bin/safeclis/src', 'SYSTEMD_EXEC_PID': '2914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ANTIGRAVITY_AGENT': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8211', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/neer/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'neer', 'JOURNAL_STREAM': '10:36222', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'neer', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'ANTIGRAVITY_LS_VERSION': 'ide-2.4.5', 'ANTIGRAVITY_EDITOR_APP_ROOT': '/opt/antigravity-ide/resources/app', 'PATH': '/home/neer/.gemini/antigravity-ide/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Neer:@/tmp/.ICE-unix/2871,unix/Neer:/tmp/.ICE-unix/2871', 'INVOCATION_ID': 'cb330d5cfbdd48508fd09178d9abf4b7', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'ANTIGRAVITY_CONVERSATION_ID': 'e9608b14-0ed8-47b3-87bf-5b954807982c', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ANTIGRAVITY_LS_ADDRESS': 'localhost:37439', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'ANTIGRAVITY_TRAJECTORY_ID': 'b7d79ea6-fa40-42f0-9a65-f9a27acc9a7c', 'PWD': '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/neer/.config/Antigravity IDE/CachedData/ecfbad74d93962fc8ca485d93ab9b4f3d4cb6cf8', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'ANTIGRAVITY_CSRF_TOKEN': '17e70be8-05bb-4935-a8d4-39ccfcce2a9f', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '8211'}), 'shell': False}
+[3.581929] (amr_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[3.583130] (amr_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[3.589605] (amr_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_amr_msgs\n'}
+[3.608460] (-) TimerEvent: {}
+[3.708743] (-) TimerEvent: {}
+[3.737848] (amr_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.738233] (amr_msgs) StdoutLine: {'line': b'creating amr_msgs.egg-info\n'}
+[3.750132] (amr_msgs) StdoutLine: {'line': b'writing amr_msgs.egg-info/PKG-INFO\n'}
+[3.750437] (amr_msgs) StdoutLine: {'line': b'writing dependency_links to amr_msgs.egg-info/dependency_links.txt\n'}
+[3.750550] (amr_msgs) StdoutLine: {'line': b'writing top-level names to amr_msgs.egg-info/top_level.txt\n'}
+[3.750635] (amr_msgs) StdoutLine: {'line': b"writing manifest file 'amr_msgs.egg-info/SOURCES.txt'\n"}
+[3.764492] (amr_msgs) StdoutLine: {'line': b'[  3%] Built target amr_msgs__rosidl_generator_type_description\n'}
+[3.773886] (amr_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.778786] (amr_msgs) StdoutLine: {'line': b'[  5%] Built target amr_msgs__rs\n'}
+[3.780686] (amr_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.787559] (amr_msgs) StdoutLine: {'line': b"reading manifest file 'amr_msgs.egg-info/SOURCES.txt'\n"}
+[3.787885] (amr_msgs) StdoutLine: {'line': b"writing manifest file 'amr_msgs.egg-info/SOURCES.txt'\n"}
+[3.808908] (amr_msgs) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_build_amr_msgs_egg\n'}
+[3.809033] (-) TimerEvent: {}
+[3.909320] (-) TimerEvent: {}
+[4.009509] (-) TimerEvent: {}
+[4.010129] (amr_msgs) StdoutLine: {'line': b'[  7%] Built target amr_msgs__cpp\n'}
+[4.043254] (amr_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/choke_request__description.c.o\x1b[0m\n'}
+[4.043617] (amr_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/choke_request__functions.c.o\x1b[0m\n'}
+[4.043816] (amr_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/choke_request__type_support.c.o\x1b[0m\n'}
+[4.045326] (amr_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_plan__description.c.o\x1b[0m\n'}
+[4.045576] (amr_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_plan__functions.c.o\x1b[0m\n'}
+[4.045704] (amr_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_plan__type_support.c.o\x1b[0m\n'}
+[4.045751] (amr_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/detected_obstacle__description.c.o\x1b[0m\n'}
+[4.046021] (amr_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/detected_obstacle__type_support.c.o\x1b[0m\n'}
+[4.046080] (amr_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/detected_obstacle__functions.c.o\x1b[0m\n'}
+[4.097853] (amr_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libamr_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[4.109643] (-) TimerEvent: {}
+[4.146688] (amr_msgs) StdoutLine: {'line': b'[ 25%] Built target amr_msgs__rosidl_generator_c\n'}
+[4.161422] (amr_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.162472] (amr_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.162599] (amr_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.162689] (amr_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.162797] (amr_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.162876] (amr_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.209813] (-) TimerEvent: {}
+[4.310069] (-) TimerEvent: {}
+[4.366185] (amr_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_msgs/msg/detected_obstacle__type_support.cpp.o\x1b[0m\n'}
+[4.367508] (amr_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/robot_plan__type_support.cpp.o\x1b[0m\n'}
+[4.368486] (amr_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_msgs/msg/robot_plan__type_support.cpp.o\x1b[0m\n'}
+[4.368778] (amr_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_msgs/msg/choke_request__type_support.cpp.o\x1b[0m\n'}
+[4.370020] (amr_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/choke_request__type_support.cpp.o\x1b[0m\n'}
+[4.370161] (amr_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/detected_obstacle__type_support.cpp.o\x1b[0m\n'}
+[4.378595] (amr_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_msgs/msg/detail/detected_obstacle__type_support.c.o\x1b[0m\n'}
+[4.378823] (amr_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_msgs/msg/detail/choke_request__type_support.c.o\x1b[0m\n'}
+[4.379742] (amr_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_msgs/msg/detail/robot_plan__type_support.c.o\x1b[0m\n'}
+[4.381484] (amr_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/choke_request__type_support.cpp.o\x1b[0m\n'}
+[4.383593] (amr_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/robot_plan__type_support.cpp.o\x1b[0m\n'}
+[4.383758] (amr_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/detected_obstacle__type_support.cpp.o\x1b[0m\n'}
+[4.402862] (amr_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_msgs/msg/detail/dds_fastrtps/detected_obstacle__type_support.cpp.o\x1b[0m\n'}
+[4.403073] (amr_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_msgs/msg/detail/dds_fastrtps/choke_request__type_support.cpp.o\x1b[0m\n'}
+[4.405066] (amr_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_msgs/msg/detail/dds_fastrtps/robot_plan__type_support.cpp.o\x1b[0m\n'}
+[4.410312] (amr_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/detected_obstacle__type_support_c.cpp.o\x1b[0m\n'}
+[4.410507] (-) TimerEvent: {}
+[4.410705] (amr_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.412820] (amr_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/robot_plan__type_support_c.cpp.o\x1b[0m\n'}
+[4.412984] (amr_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/choke_request__type_support_c.cpp.o\x1b[0m\n'}
+[4.413396] (amr_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking C shared library libamr_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.449604] (amr_msgs) StdoutLine: {'line': b'[ 72%] Built target amr_msgs__rosidl_typesupport_introspection_c\n'}
+[4.455256] (amr_msgs) StdoutLine: {'line': b'[ 72%] Built target amr_msgs__rosidl_typesupport_c\n'}
+[4.510623] (-) TimerEvent: {}
+[4.602974] (amr_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.610728] (-) TimerEvent: {}
+[4.666379] (amr_msgs) StdoutLine: {'line': b'[ 74%] Built target amr_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.690508] (amr_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.710941] (-) TimerEvent: {}
+[4.726312] (amr_msgs) StdoutLine: {'line': b'[ 76%] Built target amr_msgs__rosidl_typesupport_cpp\n'}
+[4.726559] (amr_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.757528] (amr_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.785701] (amr_msgs) StdoutLine: {'line': b'[ 80%] Built target amr_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.811081] (-) TimerEvent: {}
+[4.816934] (amr_msgs) StdoutLine: {'line': b'[ 80%] Built target amr_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.837086] (amr_msgs) StdoutLine: {'line': b'[ 80%] Built target amr_msgs\n'}
+[4.867616] (amr_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.911317] (-) TimerEvent: {}
+[5.011647] (-) TimerEvent: {}
+[5.111985] (-) TimerEvent: {}
+[5.200851] (amr_msgs) StdoutLine: {'line': b'[ 81%] Built target amr_msgs__py\n'}
+[5.212233] (-) TimerEvent: {}
+[5.225721] (amr_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o\x1b[0m\n'}
+[5.227852] (amr_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o\x1b[0m\n'}
+[5.228023] (amr_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o\x1b[0m\n'}
+[5.312460] (-) TimerEvent: {}
+[5.334479] (amr_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library libamr_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[5.390557] (amr_msgs) StdoutLine: {'line': b'[ 89%] Built target amr_msgs__rosidl_generator_py\n'}
+[5.410108] (amr_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/amr_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.412624] (-) TimerEvent: {}
+[5.412833] (amr_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/amr_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.416412] (amr_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.485546] (amr_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.486638] (amr_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.487883] (amr_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.509623] (amr_msgs) StdoutLine: {'line': b'[100%] Built target amr_msgs_s__rosidl_typesupport_introspection_c\n'}
+[5.512747] (-) TimerEvent: {}
+[5.513961] (amr_msgs) StdoutLine: {'line': b'[100%] Built target amr_msgs_s__rosidl_typesupport_c\n'}
+[5.514700] (amr_msgs) StdoutLine: {'line': b'[100%] Built target amr_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[5.527405] (amr_msgs) CommandEnded: {'returncode': 0}
+[5.528333] (amr_msgs) JobProgress: {'identifier': 'amr_msgs', 'progress': 'install'}
+[5.541052] (amr_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs'], 'cwd': '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/neer', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'neer', 'ANTIGRAVITY_SOURCE_METADATA': '{"tool":{"conversationId":"e9608b14-0ed8-47b3-87bf-5b954807982c","stepIndex":99,"toolCall":{"id":"toolu_vrtx_0193p1QX7LSUTwC7QoURZ8Gx","name":"run_command","argumentsJson":"{\\"CommandLine\\":\\"source /opt/ros/jazzy/setup.bash \\\\u0026\\\\u0026 colcon build --symlink-install --packages-select amr_msgs 2\\\\u003e\\\\u00261\\",\\"Cwd\\":\\"/home/neer/Desktop/SIH/ros2_ws\\",\\"WaitMsBeforeAsync\\":10000,\\"toolAction\\":\\"Building amr_msgs\\",\\"toolSummary\\":\\"Message package build\\"}","originalName":"run_command"}}}', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/opt/antigravity-ide/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'x11', 'ANTIGRAVITY_AGENTAPI_EXE': '/opt/antigravity-ide/resources/app/extensions/antigravity/bin/language_server_linux_x64', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/neer', 'CHROME_DESKTOP': 'antigravity-ide.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-310fea30-1.10-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/home/neer/.local/share/applications/antigravity-ide.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'MANAGERPID': '2529', 'ANTIGRAVITY_SAFECLIS_SOURCE': '/home/neer/.gemini/antigravity-ide/bin/safeclis/src', 'SYSTEMD_EXEC_PID': '2914', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ANTIGRAVITY_AGENT': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8211', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/neer/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'neer', 'JOURNAL_STREAM': '10:36222', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'neer', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'ANTIGRAVITY_LS_VERSION': 'ide-2.4.5', 'ANTIGRAVITY_EDITOR_APP_ROOT': '/opt/antigravity-ide/resources/app', 'PATH': '/home/neer/.gemini/antigravity-ide/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Neer:@/tmp/.ICE-unix/2871,unix/Neer:/tmp/.ICE-unix/2871', 'INVOCATION_ID': 'cb330d5cfbdd48508fd09178d9abf4b7', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'ANTIGRAVITY_CONVERSATION_ID': 'e9608b14-0ed8-47b3-87bf-5b954807982c', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': '', 'SBX_CHROME_API_RQ': '1', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ANTIGRAVITY_LS_ADDRESS': 'localhost:37439', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'ANTIGRAVITY_TRAJECTORY_ID': 'b7d79ea6-fa40-42f0-9a65-f9a27acc9a7c', 'PWD': '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/neer/.config/Antigravity IDE/CachedData/ecfbad74d93962fc8ca485d93ab9b4f3d4cb6cf8', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'ANTIGRAVITY_CSRF_TOKEN': '17e70be8-05bb-4935-a8d4-39ccfcce2a9f', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '8211'}), 'shell': False}
+[5.555492] (amr_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.556188] (amr_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.556658] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/ament_index/resource_index/rosidl_interfaces/amr_msgs\n'}
+[5.569045] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotPlan.json\n'}
+[5.580792] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/DetectedObstacle.json\n'}
+[5.591652] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/ChokeRequest.json\n'}
+[5.599826] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/choke_request.h\n'}
+[5.609096] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__functions.h\n'}
+[5.612871] (-) TimerEvent: {}
+[5.618754] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__struct.h\n'}
+[5.628986] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__type_support.h\n'}
+[5.639618] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__functions.h\n'}
+[5.650370] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__struct.h\n'}
+[5.659988] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__type_support.h\n'}
+[5.672025] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__functions.h\n'}
+[5.680321] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__struct.h\n'}
+[5.686340] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__type_support.h\n'}
+[5.692847] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detected_obstacle.h\n'}
+[5.701437] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/robot_plan.h\n'}
+[5.707247] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.713049] (-) TimerEvent: {}
+[5.714468] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/environment/library_path.sh\n'}
+[5.724772] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/environment/library_path.dsv\n'}
+[5.732040] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__rosidl_typesupport_fastrtps_c.h\n'}
+[5.737764] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__rosidl_typesupport_fastrtps_c.h\n'}
+[5.745717] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__rosidl_typesupport_fastrtps_c.h\n'}
+[5.755183] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.765003] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__rosidl_typesupport_introspection_c.h\n'}
+[5.774370] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__rosidl_typesupport_introspection_c.h\n'}
+[5.784589] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__rosidl_typesupport_introspection_c.h\n'}
+[5.794139] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.805949] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/choke_request.hpp\n'}
+[5.813181] (-) TimerEvent: {}
+[5.815178] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__builder.hpp\n'}
+[5.824099] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__struct.hpp\n'}
+[5.835899] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__traits.hpp\n'}
+[5.847034] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__type_support.hpp\n'}
+[5.857281] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__builder.hpp\n'}
+[5.866594] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__struct.hpp\n'}
+[5.876384] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__traits.hpp\n'}
+[5.885789] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__type_support.hpp\n'}
+[5.894783] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__builder.hpp\n'}
+[5.904821] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__struct.hpp\n'}
+[5.913426] (-) TimerEvent: {}
+[5.913920] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__traits.hpp\n'}
+[5.925678] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__type_support.hpp\n'}
+[5.932061] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detected_obstacle.hpp\n'}
+[5.940303] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/robot_plan.hpp\n'}
+[5.949929] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.960942] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.970091] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.979735] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.990102] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.999857] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.008580] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.013645] (-) TimerEvent: {}
+[6.018047] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.027827] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/environment/pythonpath.sh\n'}
+[6.040077] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/environment/pythonpath.dsv\n'}
+[6.047700] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info/PKG-INFO\n'}
+[6.058604] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info/SOURCES.txt\n'}
+[6.068872] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info/dependency_links.txt\n'}
+[6.076470] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info/top_level.txt\n'}
+[6.088794] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/__init__.py\n'}
+[6.098248] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[6.107861] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.113851] (-) TimerEvent: {}
+[6.118792] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.126649] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so\n'}
+[6.135102] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[6.143488] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[6.151282] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/__init__.py\n'}
+[6.156995] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_choke_request.py\n'}
+[6.162610] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_choke_request_s.c\n'}
+[6.173262] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_detected_obstacle.py\n'}
+[6.181470] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_detected_obstacle_s.c\n'}
+[6.190015] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_plan.py\n'}
+[6.198053] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_plan_s.c\n'}
+[6.205730] (amr_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[6.206009] (amr_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[6.206121] (amr_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so\n'}
+[6.206213] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/ament_index/resource_index/rust_packages/amr_msgs\n'}
+[6.211998] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/rust/Cargo.toml\n'}
+[6.214045] (-) TimerEvent: {}
+[6.217802] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/rust/build.rs\n'}
+[6.225607] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/rust/src/lib.rs\n'}
+[6.233122] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/rust/src/msg.rs\n'}
+[6.239288] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/rust/src/msg/rmw.rs\n'}
+[6.245409] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotPlan.idl\n'}
+[6.252881] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/DetectedObstacle.idl\n'}
+[6.260913] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/ChokeRequest.idl\n'}
+[6.267567] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotPlan.msg\n'}
+[6.274597] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/DetectedObstacle.msg\n'}
+[6.283535] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/msg/ChokeRequest.msg\n'}
+[6.291223] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/ament_index/resource_index/package_run_dependencies/amr_msgs\n'}
+[6.297579] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/ament_index/resource_index/parent_prefix_path/amr_msgs\n'}
+[6.304141] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/environment/ament_prefix_path.sh\n'}
+[6.311463] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/environment/ament_prefix_path.dsv\n'}
+[6.314150] (-) TimerEvent: {}
+[6.319212] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/environment/path.sh\n'}
+[6.325603] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/environment/path.dsv\n'}
+[6.332360] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/local_setup.bash\n'}
+[6.339778] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/local_setup.sh\n'}
+[6.347596] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/local_setup.zsh\n'}
+[6.353603] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/local_setup.dsv\n'}
+[6.359227] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.dsv\n'}
+[6.367096] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/ament_index/resource_index/packages/amr_msgs\n'}
+[6.374851] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[6.381517] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.387282] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.395902] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.403988] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.410324] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.414278] (-) TimerEvent: {}
+[6.416235] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.425955] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[6.432417] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgsConfig.cmake\n'}
+[6.439132] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgsConfig-version.cmake\n'}
+[6.446894] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.xml\n'}
+[6.455135] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_generator_c.so\n'}
+[6.455530] (amr_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_generator_c.so" to ""\n'}
+[6.455708] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.455961] (amr_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.456162] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_c.so\n'}
+[6.456304] (amr_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.456430] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_c.so\n'}
+[6.456613] (amr_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_c.so" to ""\n'}
+[6.456736] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.456892] (amr_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.457012] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[6.457131] (amr_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.457252] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_cpp.so\n'}
+[6.457489] (amr_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[6.501884] (amr_msgs) StdoutLine: {'line': b"Listing '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs'...\n"}
+[6.502052] (amr_msgs) StdoutLine: {'line': b"Compiling '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/__init__.py'...\n"}
+[6.502132] (amr_msgs) StdoutLine: {'line': b"Listing '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg'...\n"}
+[6.502217] (amr_msgs) StdoutLine: {'line': b"Compiling '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/__init__.py'...\n"}
+[6.502290] (amr_msgs) StdoutLine: {'line': b"Compiling '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_choke_request.py'...\n"}
+[6.502360] (amr_msgs) StdoutLine: {'line': b"Compiling '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_detected_obstacle.py'...\n"}
+[6.502429] (amr_msgs) StdoutLine: {'line': b"Compiling '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_plan.py'...\n"}
+[6.505796] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_generator_py.so\n'}
+[6.506113] (amr_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_generator_py.so" to ""\n'}
+[6.506209] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cExport.cmake\n'}
+[6.506290] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.506368] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.506553] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.506787] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.506876] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.506954] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cExport.cmake\n'}
+[6.507030] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.507105] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cppExport.cmake\n'}
+[6.507188] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.507263] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.507339] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.507414] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.507650] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[6.507739] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.507866] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_pyExport.cmake\n'}
+[6.507948] (amr_msgs) StdoutLine: {'line': b'-- Installing: /home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.508430] (amr_msgs) CommandEnded: {'returncode': 0}
+[6.514352] (-) TimerEvent: {}
+[6.525854] (amr_msgs) JobEnded: {'identifier': 'amr_msgs', 'rc': 0}
+[6.526485] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h

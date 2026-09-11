@@ -1,0 +1,413 @@
+[0.069s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.069s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=28, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x74e21f299790>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74e21f2993a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74e21f2993a0>>, mixin_verb=('build',))
+[0.093s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.094s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.094s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.094s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.094s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.094s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.094s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/neer/Desktop/SIH/ros2_ws'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.094s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(results) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_bringup) by extension 'ros'
+[0.115s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amr_bringup' with type 'ros.ament_cmake' and name 'amr_bringup'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_coordination) by extension 'ros'
+[0.116s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amr_coordination' with type 'ros.ament_python' and name 'amr_coordination'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_gazebo) by extension 'ros'
+[0.116s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amr_gazebo' with type 'ros.ament_cmake' and name 'amr_gazebo'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_msgs) by extension 'ros'
+[0.117s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amr_msgs' with type 'ros.ament_cmake' and name 'amr_msgs'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extension 'colcon_pkg'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extensions ['colcon_meta']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extension 'colcon_meta'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extensions ['ros']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_nav) by extension 'ros'
+[0.117s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amr_nav' with type 'ros.ament_cmake' and name 'amr_nav'
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.117s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.130s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.131s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/neer/ros2_ws/install
+[0.132s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 413 installed packages in /opt/ros/jazzy
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.165s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.167s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.167s] Level 5:colcon.colcon_core.verb:set package 'amr_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.167s] DEBUG:colcon.colcon_core.verb:Building package 'amr_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo', 'merge_install': False, 'path': '/home/neer/Desktop/SIH/ros2_ws/src/amr_gazebo', 'symlink_install': True, 'test_result_base': None}
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_target' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.168s] DEBUG:colcon.colcon_core.verb:Building package 'amr_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs', 'merge_install': False, 'path': '/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'cmake_target' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.168s] DEBUG:colcon.colcon_core.verb:Building package 'amr_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav', 'merge_install': False, 'path': '/home/neer/Desktop/SIH/ros2_ws/src/amr_nav', 'symlink_install': True, 'test_result_base': None}
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'cmake_target' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'cmake_clean_cache' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'cmake_clean_first' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'cmake_force_configure' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'ament_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'catkin_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_coordination' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.168s] DEBUG:colcon.colcon_core.verb:Building package 'amr_coordination' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination', 'merge_install': False, 'path': '/home/neer/Desktop/SIH/ros2_ws/src/amr_coordination', 'symlink_install': True, 'test_result_base': None}
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_target' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.168s] DEBUG:colcon.colcon_core.verb:Building package 'amr_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup', 'merge_install': False, 'path': '/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.169s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.169s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.169s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs' with build type 'ament_cmake'
+[0.169s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs'
+[0.171s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.171s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.171s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.173s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_gazebo' with build type 'ament_cmake'
+[0.173s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_gazebo'
+[0.174s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.174s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.176s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_nav' with build type 'ament_cmake'
+[0.176s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_nav'
+[0.176s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.176s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs -- -j28 -l28
+[0.183s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo -- -j28 -l28
+[0.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_nav -- -j28 -l28
+[0.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo -- -j28 -l28
+[0.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo
+[0.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_nav -- -j28 -l28
+[0.229s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_nav
+[0.243s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_gazebo)
+[0.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo
+[0.245s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo' for CMake module files
+[0.246s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo' for CMake config files
+[0.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_gazebo', 'cmake_prefix_path')
+[0.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/hook/cmake_prefix_path.ps1'
+[0.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/hook/cmake_prefix_path.dsv'
+[0.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/hook/cmake_prefix_path.sh'
+[0.249s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/bin'
+[0.249s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/lib/pkgconfig/amr_gazebo.pc'
+[0.249s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/lib/python3.12/site-packages'
+[0.249s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/bin'
+[0.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.ps1'
+[0.250s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.dsv'
+[0.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.sh'
+[0.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.bash'
+[0.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.zsh'
+[0.251s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/colcon-core/packages/amr_gazebo)
+[0.251s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_gazebo)
+[0.252s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo' for CMake module files
+[0.252s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo' for CMake config files
+[0.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_gazebo', 'cmake_prefix_path')
+[0.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/hook/cmake_prefix_path.ps1'
+[0.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/hook/cmake_prefix_path.dsv'
+[0.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/hook/cmake_prefix_path.sh'
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/bin'
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/lib/pkgconfig/amr_gazebo.pc'
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/lib/python3.12/site-packages'
+[0.253s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/bin'
+[0.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.ps1'
+[0.254s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.dsv'
+[0.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.sh'
+[0.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.bash'
+[0.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/amr_gazebo/package.zsh'
+[0.255s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo/share/colcon-core/packages/amr_gazebo)
+[0.255s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_nav)
+[0.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_nav
+[0.256s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav' for CMake module files
+[0.257s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav' for CMake config files
+[0.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_nav', 'cmake_prefix_path')
+[0.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/hook/cmake_prefix_path.ps1'
+[0.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/hook/cmake_prefix_path.dsv'
+[0.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/hook/cmake_prefix_path.sh'
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/bin'
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/lib/pkgconfig/amr_nav.pc'
+[0.259s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/lib/python3.12/site-packages'
+[0.260s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/bin'
+[0.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.ps1'
+[0.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.dsv'
+[0.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.sh'
+[0.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.bash'
+[0.262s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.zsh'
+[0.262s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/colcon-core/packages/amr_nav)
+[0.263s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_nav)
+[0.263s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav' for CMake module files
+[0.264s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav' for CMake config files
+[0.264s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_nav', 'cmake_prefix_path')
+[0.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/hook/cmake_prefix_path.ps1'
+[0.265s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/hook/cmake_prefix_path.dsv'
+[0.265s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/hook/cmake_prefix_path.sh'
+[0.266s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/bin'
+[0.266s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/lib/pkgconfig/amr_nav.pc'
+[0.266s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/lib/python3.12/site-packages'
+[0.266s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/bin'
+[0.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.ps1'
+[0.267s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.dsv'
+[0.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.sh'
+[0.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.bash'
+[0.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.zsh'
+[0.269s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/colcon-core/packages/amr_nav)
+[0.462s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs -- -j28 -l28
+[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs
+[0.527s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_msgs)
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs' for CMake module files
+[0.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs
+[0.529s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs' for CMake config files
+[0.530s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'cmake_prefix_path')
+[0.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.ps1'
+[0.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.dsv'
+[0.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.sh'
+[0.531s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib'
+[0.532s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'ld_library_path_lib')
+[0.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.ps1'
+[0.532s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.dsv'
+[0.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.sh'
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/bin'
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/pkgconfig/amr_msgs.pc'
+[0.533s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages'
+[0.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'pythonpath')
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/pythonpath.ps1'
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/pythonpath.dsv'
+[0.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/pythonpath.sh'
+[0.534s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/bin'
+[0.535s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.ps1'
+[0.535s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.dsv'
+[0.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.sh'
+[0.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.bash'
+[0.537s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.zsh'
+[0.537s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/colcon-core/packages/amr_msgs)
+[0.538s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_msgs)
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs' for CMake module files
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs' for CMake config files
+[0.539s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'cmake_prefix_path')
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.ps1'
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.dsv'
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.sh'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib'
+[0.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'ld_library_path_lib')
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.dsv'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.sh'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/bin'
+[0.541s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/pkgconfig/amr_msgs.pc'
+[0.541s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages'
+[0.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'pythonpath')
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/pythonpath.ps1'
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/pythonpath.dsv'
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/hook/pythonpath.sh'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/bin'
+[0.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.ps1'
+[0.542s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.dsv'
+[0.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.sh'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.bash'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/amr_msgs/package.zsh'
+[0.543s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/share/colcon-core/packages/amr_msgs)
+[0.543s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_coordination' with build type 'ament_python'
+[0.544s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_coordination', 'ament_prefix_path')
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/hook/ament_prefix_path.ps1'
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/hook/ament_prefix_path.dsv'
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/hook/ament_prefix_path.sh'
+[0.545s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.545s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.698s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_coordination'
+[0.698s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.698s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.080s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: dist_info, build, sdist, bdist, check, build_ext, test, install_egg_info, bdist_wheel, update_catalog, build_clib, bdist_dumb, saveopts, build_scripts, easy_install, upload, setopt, extract_messages, clean, init_catalog, install_lib, install_scripts, install_data, compile_catalog, install_headers, build_py, egg_info, upload_docs, develop, symlink_data, rotate, register, install, alias, bdist_rpm, bdist_egg, editable_wheel
+[1.294s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --quiet, --multi-version, --exclude-scripts, --user, --install-layout, --egg-path, --force-installation-into-system-dir, --dry-run, --prefix, --site-dirs, --find-links, --help, --upgrade, --install-dir, --zip-ok, --always-copy, --editable, --version, --local-snapshots-ok, --index-url, --record, --build-directory, --no-deps, --script-dir, --allow-hosts, --no-find-links, --optimize, --no-user-cfg, --always-unzip, --uninstall, --verbose
+[1.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination': AMENT_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/build --no-deps symlink_data
+[1.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_coordination', 'pythonpath_develop')
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/share/amr_coordination/hook/pythonpath_develop.ps1'
+[1.707s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/share/amr_coordination/hook/pythonpath_develop.dsv'
+[1.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination' returned '0': AMENT_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/build --no-deps symlink_data
+[1.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/share/amr_coordination/hook/pythonpath_develop.sh'
+[1.707s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination' for CMake module files
+[1.708s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination' for CMake config files
+[1.708s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib'
+[1.708s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/bin'
+[1.708s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/pkgconfig/amr_coordination.pc'
+[1.708s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages'
+[1.708s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_coordination', 'pythonpath')
+[1.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/hook/pythonpath.ps1'
+[1.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/hook/pythonpath.dsv'
+[1.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/hook/pythonpath.sh'
+[1.709s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/bin'
+[1.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_coordination)
+[1.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/package.ps1'
+[1.710s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/package.dsv'
+[1.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/package.sh'
+[1.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/package.bash'
+[1.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/package.zsh'
+[1.711s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/colcon-core/packages/amr_coordination)
+[1.711s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup' with build type 'ament_cmake'
+[1.711s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup'
+[1.711s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.711s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup': AMENT_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination:/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup -- -j28 -l28
+[1.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup' returned '0': AMENT_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination:/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup -- -j28 -l28
+[1.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup': AMENT_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination:/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup
+[1.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_bringup)
+[1.803s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup' for CMake module files
+[1.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup' returned '0': AMENT_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination:/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup
+[1.803s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup' for CMake config files
+[1.803s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_bringup', 'cmake_prefix_path')
+[1.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/hook/cmake_prefix_path.ps1'
+[1.804s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/hook/cmake_prefix_path.dsv'
+[1.804s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/hook/cmake_prefix_path.sh'
+[1.804s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/bin'
+[1.804s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/lib/pkgconfig/amr_bringup.pc'
+[1.805s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/lib/python3.12/site-packages'
+[1.805s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/bin'
+[1.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.ps1'
+[1.805s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.dsv'
+[1.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.sh'
+[1.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.bash'
+[1.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.zsh'
+[1.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/colcon-core/packages/amr_bringup)
+[1.807s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_bringup)
+[1.807s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup' for CMake module files
+[1.807s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup' for CMake config files
+[1.807s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_bringup', 'cmake_prefix_path')
+[1.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/hook/cmake_prefix_path.ps1'
+[1.808s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/hook/cmake_prefix_path.dsv'
+[1.808s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/hook/cmake_prefix_path.sh'
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/bin'
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/lib/pkgconfig/amr_bringup.pc'
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/lib/python3.12/site-packages'
+[1.809s] Level 1:colcon.colcon_core.environment:checking '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/bin'
+[1.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.ps1'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.dsv'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.sh'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.bash'
+[1.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/amr_bringup/package.zsh'
+[1.811s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/share/colcon-core/packages/amr_bringup)
+[1.811s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.811s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.812s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.812s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.816s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.816s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.816s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.826s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.826s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neer/Desktop/SIH/ros2_ws/install/local_setup.ps1'
+[1.827s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/neer/Desktop/SIH/ros2_ws/install/_local_setup_util_ps1.py'
+[1.828s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neer/Desktop/SIH/ros2_ws/install/setup.ps1'
+[1.828s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neer/Desktop/SIH/ros2_ws/install/local_setup.sh'
+[1.829s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/neer/Desktop/SIH/ros2_ws/install/_local_setup_util_sh.py'
+[1.829s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neer/Desktop/SIH/ros2_ws/install/setup.sh'
+[1.830s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neer/Desktop/SIH/ros2_ws/install/local_setup.bash'
+[1.830s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neer/Desktop/SIH/ros2_ws/install/setup.bash'
+[1.830s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neer/Desktop/SIH/ros2_ws/install/local_setup.zsh'
+[1.831s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neer/Desktop/SIH/ros2_ws/install/setup.zsh'

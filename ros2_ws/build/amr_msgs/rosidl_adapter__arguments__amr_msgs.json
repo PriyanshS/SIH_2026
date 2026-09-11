@@ -1,0 +1,9 @@
+{
+  "package_name": "amr_msgs",
+  "non_idl_tuples": [
+    "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs:msg/RobotPlan.msg",
+    "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs:msg/DetectedObstacle.msg",
+    "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs:msg/ChokeRequest.msg",
+    "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs:msg/RobotStatus.msg"
+  ]
+}

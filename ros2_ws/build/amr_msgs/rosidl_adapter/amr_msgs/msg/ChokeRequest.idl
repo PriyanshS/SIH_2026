@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from amr_msgs/msg/ChokeRequest.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module amr_msgs {
+  module msg {
+    module ChokeRequest_Constants {
+      @verbatim (language="comment", text=
+        "msg_type constants")
+      const uint8 REQUEST = 0;
+      const uint8 GRANT = 1;
+      const uint8 RELEASE = 2;
+      const uint8 HEARTBEAT = 3;
+    };
+    @verbatim (language="comment", text=
+      "Chokepoint negotiation protocol message")
+    struct ChokeRequest {
+      string robot_id;
+
+      uint8 msg_type;
+
+      uint32 priority;
+
+      double distance_to_choke;
+
+      @verbatim (language="comment", text=
+        "human-readable yield reason e.g. \"yielding to robot2, lower priority\"")
+      string reason;
+
+      builtin_interfaces::msg::Time stamp;
+    };
+  };
+};

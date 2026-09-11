@@ -1,0 +1,35 @@
+[0.901s] Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination': CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/build --no-deps symlink_data
+[1.110s] running develop
+[1.233s] running egg_info
+[1.233s] creating amr_coordination.egg-info
+[1.246s] writing amr_coordination.egg-info/PKG-INFO
+[1.246s] writing dependency_links to amr_coordination.egg-info/dependency_links.txt
+[1.246s] writing entry points to amr_coordination.egg-info/entry_points.txt
+[1.246s] writing requirements to amr_coordination.egg-info/requires.txt
+[1.246s] writing top-level names to amr_coordination.egg-info/top_level.txt
+[1.246s] writing manifest file 'amr_coordination.egg-info/SOURCES.txt'
+[1.271s] reading manifest file 'amr_coordination.egg-info/SOURCES.txt'
+[1.271s] writing manifest file 'amr_coordination.egg-info/SOURCES.txt'
+[1.285s] running build_ext
+[1.285s] Creating /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages/amr-coordination.egg-link (link to .)
+[1.288s] Installing choke_negotiator script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.288s] Installing conflict_detector script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.288s] Installing goal_sequencer script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.288s] Installing metrics_logger script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.288s] Installing obstacle_relay script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.288s] Installing path_sharer script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.288s] 
+[1.288s] Installed /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination
+[1.288s] running symlink_data
+[1.289s] creating /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/ament_index
+[1.289s] creating /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/ament_index/resource_index
+[1.289s] creating /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/ament_index/resource_index/packages
+[1.289s] symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/resource/amr_coordination -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/ament_index/resource_index/packages
+[1.289s] symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/package.xml -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination
+[1.289s] creating /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+[1.289s] symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/launch/baseline.launch.py -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+[1.289s] symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/launch/coordination.launch.py -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+[1.289s] creating /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/config
+[1.289s] symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/config/waypoints.yaml -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/config
+[1.289s] symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/config/chokepoint.yaml -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/config
+[1.312s] Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination' returned '0': CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:/home/neer/Desktop/SIH/ros2_ws/install/amr_nav:/home/neer/Desktop/SIH/ros2_ws/install/amr_gazebo:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/build --no-deps symlink_data

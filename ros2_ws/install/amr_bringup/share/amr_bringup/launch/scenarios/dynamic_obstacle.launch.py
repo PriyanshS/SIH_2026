@@ -1,0 +1,1 @@
+/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup/launch/scenarios/dynamic_obstacle.launch.py

@@ -1,0 +1,25 @@
+[1.516s] Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination': AMENT_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/build --no-deps symlink_data
+[1.911s] running develop
+[2.137s] running egg_info
+[2.158s] writing amr_coordination.egg-info/PKG-INFO
+[2.159s] writing dependency_links to amr_coordination.egg-info/dependency_links.txt
+[2.159s] writing entry points to amr_coordination.egg-info/entry_points.txt
+[2.159s] writing requirements to amr_coordination.egg-info/requires.txt
+[2.159s] writing top-level names to amr_coordination.egg-info/top_level.txt
+[2.201s] reading manifest file 'amr_coordination.egg-info/SOURCES.txt'
+[2.202s] writing manifest file 'amr_coordination.egg-info/SOURCES.txt'
+[2.224s] running build_ext
+[2.226s] Creating /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages/amr-coordination.egg-link (link to .)
+[2.227s] Installing choke_negotiator script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[2.227s] Installing conflict_detector script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[2.228s] Installing goal_dispatcher script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[2.228s] Installing goal_sequencer script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[2.228s] Installing metrics_logger script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[2.228s] Installing obstacle_relay script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[2.228s] Installing path_sharer script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[2.229s] Installing send_goal script to /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/amr_coordination
+[2.229s] 
+[2.229s] Installed /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination
+[2.229s] running symlink_data
+[2.229s] symbolically linking /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/launch/single_robot_coordination.launch.py -> /home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+[2.264s] Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination' returned '0': AMENT_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/neer/Desktop/SIH/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/neer/Desktop/SIH/ros2_ws/build/amr_coordination/build --no-deps symlink_data

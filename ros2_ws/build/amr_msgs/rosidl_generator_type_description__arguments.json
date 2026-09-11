@@ -1,0 +1,17 @@
+{
+  "package_name": "amr_msgs",
+  "output_dir": "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs",
+  "idl_tuples": [
+    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotPlan.idl",
+    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/DetectedObstacle.idl",
+    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/ChokeRequest.idl",
+    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotStatus.idl"
+  ],
+  "include_paths": [
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs",
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "nav_msgs:/opt/ros/jazzy/share/nav_msgs",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

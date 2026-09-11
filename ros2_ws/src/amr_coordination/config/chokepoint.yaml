@@ -1,0 +1,12 @@
+# Chokepoint zone definition
+# Convex polygon in map frame (meters) defining the negotiation zone
+# The actual physical gap is ~2.4m wide; the polygon is larger to catch approaching robots
+
+chokepoint:
+  centroid: [10.3, 7.5]
+  vertices:
+    - [8.5, 5.5]
+    - [12.0, 5.5]
+    - [12.0, 9.5]
+    - [8.5, 9.5]
+  approach_distance: 2.0   # meters from centroid to trigger REQUESTING state

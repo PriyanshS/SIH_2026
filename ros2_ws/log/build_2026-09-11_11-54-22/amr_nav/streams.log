@@ -1,0 +1,25 @@
+[0.010s] Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_nav -- -j28 -l28
+[0.045s] Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/neer/Desktop/SIH/ros2_ws/build/amr_nav -- -j28 -l28
+[0.045s] Invoking command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_nav
+[0.052s] -- Install configuration: ""
+[0.053s] -- Execute custom install script
+[0.053s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/config/nav2_params.yaml
+[0.053s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/maps/warehouse_map.pgm
+[0.053s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/maps/warehouse_map.yaml
+[0.053s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/launch/robot_nav.launch.py
+[0.054s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/ament_index/resource_index/package_run_dependencies/amr_nav
+[0.054s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/ament_index/resource_index/parent_prefix_path/amr_nav
+[0.054s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/environment/ament_prefix_path.sh
+[0.054s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/environment/ament_prefix_path.dsv
+[0.054s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/environment/path.sh
+[0.055s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/environment/path.dsv
+[0.055s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/local_setup.bash
+[0.055s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/local_setup.sh
+[0.055s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/local_setup.zsh
+[0.055s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/local_setup.dsv
+[0.055s] -- Symlinking: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.dsv
+[0.062s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/ament_index/resource_index/packages/amr_nav
+[0.062s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/cmake/amr_navConfig.cmake
+[0.063s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/cmake/amr_navConfig-version.cmake
+[0.063s] -- Up-to-date symlink: /home/neer/Desktop/SIH/ros2_ws/install/amr_nav/share/amr_nav/package.xml
+[0.072s] Invoked command in '/home/neer/Desktop/SIH/ros2_ws/build/amr_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/neer/Desktop/SIH/ros2_ws/build/amr_nav
