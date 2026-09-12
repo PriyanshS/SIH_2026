@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_bringup/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_bringup/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_bringup/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup/${destination}")
+      set(destination "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_bringup/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,46 +316,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch" "DESTINATION" "share/amr_bringup")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" DIRECTORY "launch" "DESTINATION" "share/amr_bringup")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" DIRECTORY "launch" "DESTINATION" "share/amr_bringup")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/amr_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/amr_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/amr_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/amr_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/amr_bringup" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/amr_bringup" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/amr_bringup" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/amr_bringup" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/amr_bringup/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/amr_bringup/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/amr_bringup/environment")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/amr_bringup/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/amr_bringup/environment")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/amr_bringup/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/amr_bringup/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/amr_bringup/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/amr_bringup/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/amr_bringup/environment")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/amr_bringup/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/amr_bringup/environment")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/amr_bringup/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/amr_bringup/environment")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/amr_bringup")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/amr_bringup")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/amr_bringup")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/amr_bringup")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/amr_bringup")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/amr_bringup")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/amr_bringup")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/amr_bringup")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/amr_bringup")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/amr_bringup")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/amr_bringup")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/amr_bringup")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/amr_bringup")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/amr_bringup")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/amr_bringup")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/amr_bringup")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/amr_bringup")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/amr_bringup")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/amr_bringup")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/amr_bringup")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/packages/amr_bringup" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/packages/amr_bringup" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/packages/amr_bringup" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_index/share/ament_index/resource_index/packages/amr_bringup" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_core/amr_bringupConfig.cmake" "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_core/amr_bringupConfig-version.cmake" "DESTINATION" "share/amr_bringup/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_core/amr_bringupConfig.cmake" "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_core/amr_bringupConfig-version.cmake" "DESTINATION" "share/amr_bringup/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_core/amr_bringupConfig.cmake" "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_core/amr_bringupConfig-version.cmake" "DESTINATION" "share/amr_bringup/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_core/amr_bringupConfig.cmake" "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_core/amr_bringupConfig-version.cmake" "DESTINATION" "share/amr_bringup/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup/package.xml" "DESTINATION" "share/amr_bringup")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup" FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_bringup/package.xml" "DESTINATION" "share/amr_bringup")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup/package.xml" "DESTINATION" "share/amr_bringup")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup/package.xml" "DESTINATION" "share/amr_bringup")

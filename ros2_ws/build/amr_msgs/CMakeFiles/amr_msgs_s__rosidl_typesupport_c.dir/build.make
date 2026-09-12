@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs
+CMAKE_SOURCE_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs
+CMAKE_BINARY_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o: CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o: rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c
 CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o: CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o -MF CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o.d -o CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o -c /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o -MF CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o.d -o CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o -c /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c
 
 CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c > CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c > CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.i
 
 CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c -o CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c -o CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.s
 
 # Object files for target amr_msgs_s__rosidl_typesupport_c
 amr_msgs_s__rosidl_typesupport_c_OBJECTS = \
@@ -111,7 +111,7 @@ rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so: /opt/ros/jazzy
 rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so: /opt/ros/jazzy/lib/librcutils.so
 rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so: CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared module rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/clean:
 .PHONY : CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/clean
 
 CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/depend:
-	cd /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/depend
 

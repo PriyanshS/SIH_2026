@@ -1,1 +1,0 @@
-# Decentralized AMR Coordination Package

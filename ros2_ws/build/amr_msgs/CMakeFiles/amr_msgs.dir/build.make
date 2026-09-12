@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs
+CMAKE_SOURCE_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs
+CMAKE_BINARY_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs
 
 # Utility rule file for amr_msgs.
 
@@ -66,10 +66,10 @@ include CMakeFiles/amr_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/amr_msgs.dir/progress.make
 
-CMakeFiles/amr_msgs: /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/RobotPlan.msg
-CMakeFiles/amr_msgs: /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/DetectedObstacle.msg
-CMakeFiles/amr_msgs: /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/ChokeRequest.msg
-CMakeFiles/amr_msgs: /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/RobotStatus.msg
+CMakeFiles/amr_msgs: /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/RobotPlan.msg
+CMakeFiles/amr_msgs: /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/DetectedObstacle.msg
+CMakeFiles/amr_msgs: /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/ChokeRequest.msg
+CMakeFiles/amr_msgs: /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/RobotStatus.msg
 CMakeFiles/amr_msgs: /opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/amr_msgs: /opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/amr_msgs: /opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl
@@ -161,6 +161,6 @@ CMakeFiles/amr_msgs.dir/clean:
 .PHONY : CMakeFiles/amr_msgs.dir/clean
 
 CMakeFiles/amr_msgs.dir/depend:
-	cd /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles/amr_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles/amr_msgs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/amr_msgs.dir/depend
 

@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "amr_msgs/msg/detail/detected_obstacle__type_support.h"
 #include "amr_msgs/msg/detail/detected_obstacle__functions.h"
 #include "amr_msgs/msg/detail/detected_obstacle__struct.h"
+#include "amr_msgs/msg/detail/detected_obstacle__type_support.h"
+#include "rosidl_typesupport_interface/macros.h"
 
 #ifdef __cplusplus
 extern "C"

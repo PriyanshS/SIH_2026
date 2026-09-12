@@ -7,3 +7,4 @@ metrics_logger = amr_coordination.metrics_logger:main
 obstacle_relay = amr_coordination.obstacle_relay:main
 path_sharer = amr_coordination.path_sharer:main
 send_goal = amr_coordination.send_goal:main
+web_bridge_node = amr_coordination.web_bridge_node:main

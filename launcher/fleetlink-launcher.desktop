@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=BEL FleetLink Launcher
+Comment=Start/Stop Gazebo, RViz2 and Web UI for SIH_2026 Multi-AMR System
+Exec=python3 /home/piyansh46/Code/SIH_2026/launcher/launch_app.py
+Icon=utilities-terminal
+Terminal=false
+Categories=Science;Robotics;
+Keywords=ROS;AMR;Robot;Warehouse;FleetLink;
+StartupNotify=true

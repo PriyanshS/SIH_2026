@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEL FleetLink — AMR Command Console | SIH26123</title>
+  <!-- Google Fonts: Retro 80s Stack -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ADMIN LOGIN OVERLAY — shown until authenticated
+       ══════════════════════════════════════════════════════════ -->
+  <div id="login-overlay" class="login-overlay">
+    <div class="login-box">
+      <div class="login-scanlines"></div>
+      <div class="login-content">
+        <div class="login-logo">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="3" width="20" height="14" rx="1"></rect>
+            <polyline points="8 21 12 17 16 21"></polyline>
+            <line x1="12" y1="17" x2="12" y2="17"></line>
+          </svg>
+        </div>
+        <h1 class="login-title">BEL FLEETLINK</h1>
+        <p class="login-subtitle">// ADMIN ACCESS REQUIRED //</p>
+        <p class="login-subtitle" style="color:#00ff41; font-size:0.55rem; margin-top:0.25rem;">SIH26123 — RESTRICTED SYSTEM</p>
+
+        <form id="login-form" class="login-form" autocomplete="off">
+          <div class="login-field">
+            <label for="login-user">OPERATOR ID</label>
+            <input type="text" id="login-user" value="admin" placeholder="ADMIN" autocomplete="off">
+          </div>
+          <div class="login-field">
+            <label for="login-pass">ACCESS CODE</label>
+            <input type="password" id="login-pass" placeholder="••••••••" autocomplete="off">
+          </div>
+          <div id="login-error" class="login-error" style="display:none;">
+            ⚠ INVALID CREDENTIALS — ACCESS DENIED
+          </div>
+          <button type="submit" class="login-btn" id="login-submit">
+            <span id="login-btn-text">▶ AUTHENTICATE</span>
+          </button>
+        </form>
+        <p class="login-hint">DEFAULT: admin / admin2026</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       MAIN APP (hidden until login)
+       ══════════════════════════════════════════════════════════ -->
+  <div id="main-app" class="main-app" style="display:none;">
+
+    <!-- CRT Scanline Overlay -->
+    <div class="crt-overlay" aria-hidden="true"></div>
+
+    <!-- Header Bar -->
+    <header class="app-header">
+      <div class="header-brand">
+        <div class="brand-logo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <div>
+          <h1 class="brand-title">BEL FLEETLINK <span>SIH26123</span></h1>
+          <p class="brand-subtitle">DECENTRALIZED PEER-TO-PEER MULTI-AMR WAREHOUSE COORDINATION</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div id="connection-pill" class="status-pill offline">
+          <span class="pulse-dot"></span>
+          <span id="connection-text">CONNECTING TO DDS...</span>
+        </div>
+
+        <div class="mesh-badge">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+          <span>DDS MESH</span>
+        </div>
+
+        <button id="btn-estop" class="btn btn-danger">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <rect x="9" y="9" width="6" height="6"></rect>
+          </svg>
+          <span>E-HALT</span>
+        </button>
+
+        <button id="btn-logout" class="btn btn-secondary btn-sm" title="Logout">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+          LOGOUT
+        </button>
+      </div>
+    </header>
+
+    <!-- KPI Header Strip -->
+    <section class="kpi-strip">
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-label">ACTIVE AMR FLEET</span>
+          <span class="kpi-icon text-cyan">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+              <circle cx="12" cy="5" r="2"></circle>
+              <path d="M12 7v4"></path>
+            </svg>
+          </span>
+        </div>
+        <div class="kpi-value-row">
+          <div id="kpi-fleet-count" class="kpi-value">3 / 3 Active</div>
+          <div class="kpi-pill-group">
+            <span id="pill-robot1" class="robot-pill r1">R1: IDLE</span>
+            <span id="pill-robot2" class="robot-pill r2">R2: IDLE</span>
+            <span id="pill-robot3" class="robot-pill r3">R3: IDLE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-label">FLEET THROUGHPUT</span>
+          <span class="kpi-icon text-green">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </span>
+        </div>
+        <div class="kpi-value-row">
+          <div class="kpi-value"><span id="kpi-throughput">0.00</span> <span class="kpi-unit">g/min</span></div>
+          <div class="kpi-subtext">MISSIONS: <strong id="kpi-completed">0</strong></div>
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-label">CHOKEPOINT LOCK</span>
+          <span class="kpi-icon text-amber">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </span>
+        </div>
+        <div class="kpi-value-row">
+          <div id="kpi-choke-badge" class="choke-badge free">FREE</div>
+          <div id="kpi-choke-subtext" class="kpi-subtext">TOKEN AVAILABLE</div>
+        </div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-label">TASK QUEUE</span>
+          <span class="kpi-icon text-magenta">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+          </span>
+        </div>
+        <div class="kpi-value-row">
+          <div id="kpi-queue-count" class="kpi-value">0</div>
+          <div class="kpi-subtext">FIFO BACKLOG</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Layout -->
+    <main class="main-layout">
+      <!-- Left: 2D Interactive Warehouse Floor -->
+      <section class="map-panel">
+        <div class="panel-header">
+          <div class="panel-title-group">
+            <h2 class="panel-title">▶ WAREHOUSE FLOOR PLAN</h2>
+            <span class="panel-subtitle">INTERACTIVE CANVAS · CLICK TO DISPATCH · 40m × 30m</span>
+          </div>
+          <div class="map-controls">
+            <div class="coord-tag">
+              <span>POS: </span><strong id="cursor-coords">X: 0.0m, Y: 0.0m</strong>
+            </div>
+            <button id="btn-reset-view" class="btn btn-secondary btn-sm" title="Center View">⊕ RESET</button>
+          </div>
+        </div>
+
+        <div class="canvas-container" id="canvas-container">
+          <canvas id="warehouse-canvas"></canvas>
+          <div id="click-ripple" class="click-ripple"></div>
+          <div class="map-legend">
+            <div class="legend-item"><span class="legend-swatch r1-swatch"></span> AMR-1</div>
+            <div class="legend-item"><span class="legend-swatch r2-swatch"></span> AMR-2</div>
+            <div class="legend-item"><span class="legend-swatch r3-swatch"></span> AMR-3</div>
+            <div class="legend-item"><span class="legend-swatch choke-swatch"></span> CHOKE</div>
+            <div class="legend-item"><span class="legend-swatch obstacle-swatch"></span> HAZARD</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right: Control Panel -->
+      <aside class="control-panel">
+        <nav class="panel-tabs">
+          <button class="tab-btn active" data-tab="tab-dispatch">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+            DISPATCH
+          </button>
+          <button class="tab-btn" data-tab="tab-events">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+            P2P LOG
+          </button>
+          <button class="tab-btn" data-tab="tab-diagnostics">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+            HEALTH
+          </button>
+        </nav>
+
+        <!-- Tab 1: Mission Dispatch -->
+        <div id="tab-dispatch" class="tab-content active">
+          <div class="card-section">
+            <h3 class="section-title">◈ QUICK ZONE DISPATCH</h3>
+            <p class="section-desc">SELECT TARGET BAY — ASSIGNS NEAREST IDLE AMR</p>
+            <div class="preset-grid">
+              <button class="preset-btn" data-x="5.0" data-y="26.0">
+                <span class="preset-name">BAY 1-NW</span>
+                <span class="preset-coords">5.0, 26.0</span>
+              </button>
+              <button class="preset-btn" data-x="20.0" data-y="26.0">
+                <span class="preset-name">BAY 2-NC</span>
+                <span class="preset-coords">20.0, 26.0</span>
+              </button>
+              <button class="preset-btn" data-x="35.0" data-y="26.0">
+                <span class="preset-name">BAY 3-NE</span>
+                <span class="preset-coords">35.0, 26.0</span>
+              </button>
+              <button class="preset-btn" data-x="5.0" data-y="4.0">
+                <span class="preset-name">DOCK-α</span>
+                <span class="preset-coords">5.0, 4.0</span>
+              </button>
+              <button class="preset-btn" data-x="20.0" data-y="4.0">
+                <span class="preset-name">DOCK-β</span>
+                <span class="preset-coords">20.0, 4.0</span>
+              </button>
+              <button class="preset-btn" data-x="35.0" data-y="4.0">
+                <span class="preset-name">DOCK-γ</span>
+                <span class="preset-coords">35.0, 4.0</span>
+              </button>
+              <button class="preset-btn full-width" data-x="20.0" data-y="15.0">
+                <span class="preset-name">◈ STAGING CENTROID (CHOKEPOINT)</span>
+                <span class="preset-coords">X: 20.0, Y: 15.0</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card-section">
+            <h3 class="section-title">◈ PRECISION TARGET</h3>
+            <form id="form-custom-dispatch" class="custom-dispatch-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="select-robot">ASSIGNEE</label>
+                  <select id="select-robot" class="form-select">
+                    <option value="auto">AUTO (NEAREST IDLE)</option>
+                    <option value="robot1">AMR-1 (MAGENTA)</option>
+                    <option value="robot2">AMR-2 (CYAN)</option>
+                    <option value="robot3">AMR-3 (GREEN)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row-coords">
+                <div class="form-group">
+                  <label for="input-x">TARGET X (m)</label>
+                  <input type="number" id="input-x" min="1.0" max="39.0" step="0.5" value="20.0" required>
+                </div>
+                <div class="form-group">
+                  <label for="input-y">TARGET Y (m)</label>
+                  <input type="number" id="input-y" min="1.0" max="29.0" step="0.5" value="15.0" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                ▶ DISPATCH AMR
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Tab 2: P2P Event Log -->
+        <div id="tab-events" class="tab-content">
+          <div class="card-section fill-height">
+            <div class="events-header">
+              <h3 class="section-title">◈ LIVE P2P ARBITRATION FEED</h3>
+              <button id="btn-clear-events" class="btn-text">[ CLR ]</button>
+            </div>
+            <div id="events-feed" class="events-feed">
+              <div class="event-item system">
+                <span class="event-time">--:--:--</span>
+                <span class="event-tag">SYSTEM</span>
+                <span class="event-msg">Waiting for DDS telemetry...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Fleet Health -->
+        <div id="tab-diagnostics" class="tab-content">
+          <div class="card-section">
+            <h3 class="section-title">◈ AMR TELEMETRY</h3>
+            <div class="robot-health-cards">
+              <div class="robot-health-card r1-card">
+                <div class="rh-header">
+                  <span class="rh-name">▶ AMR-1</span>
+                  <span id="diag-status-r1" class="rh-status idle">IDLE</span>
+                </div>
+                <div class="rh-coords" id="diag-coords-r1">X: 5.00m  Y: 4.00m  YAW: 0°</div>
+                <div class="rh-reason" id="diag-reason-r1">Normal Navigation</div>
+              </div>
+              <div class="robot-health-card r2-card">
+                <div class="rh-header">
+                  <span class="rh-name">▶ AMR-2</span>
+                  <span id="diag-status-r2" class="rh-status idle">IDLE</span>
+                </div>
+                <div class="rh-coords" id="diag-coords-r2">X: 20.00m  Y: 4.00m  YAW: 0°</div>
+                <div class="rh-reason" id="diag-reason-r2">Normal Navigation</div>
+              </div>
+              <div class="robot-health-card r3-card">
+                <div class="rh-header">
+                  <span class="rh-name">▶ AMR-3</span>
+                  <span id="diag-status-r3" class="rh-status idle">IDLE</span>
+                </div>
+                <div class="rh-coords" id="diag-coords-r3">X: 35.00m  Y: 4.00m  YAW: 0°</div>
+                <div class="rh-reason" id="diag-reason-r3">Normal Navigation</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-section">
+            <h3 class="section-title">◈ WATCHDOG STATUS</h3>
+            <div class="diagnostics-table">
+              <div class="diag-row">
+                <span class="diag-key">CORRIDOR WIDTH</span>
+                <span class="diag-val">2.4m SINGLE-LANE</span>
+              </div>
+              <div class="diag-row">
+                <span class="diag-key">HEARTBEAT</span>
+                <span class="diag-val">2.0 Hz (500ms)</span>
+              </div>
+              <div class="diag-row">
+                <span class="diag-key">EVICTION TTL</span>
+                <span class="diag-val">3.0s WATCHDOG</span>
+              </div>
+              <div class="diag-row">
+                <span class="diag-key">GRANT JITTER</span>
+                <span class="diag-val">Tbase + pri×0.3s</span>
+              </div>
+              <div class="diag-row">
+                <span class="diag-key">DDS TRANSPORT</span>
+                <span class="diag-val">BROKERLESS RMWF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+  </div><!-- /main-app -->
+
+  <script src="app.js"></script>
+</body>
+</html>

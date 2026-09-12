@@ -25,13 +25,14 @@ def generate_launch_description():
     model_file = os.path.join(pkg_amr_gazebo, 'models', 'amr_robot', 'model.sdf')
 
     # Robot configurations: name, x, y, yaw, color (r,g,b)
+    # Spawned in the lower green staging zones of the 60×40m warehouse
     robots = [
-        {'name': 'robot1', 'x': '3.0',  'y': '2.0', 'yaw': '0.0',
-         'color': ('0.8', '0.2', '0.2')},   # red
-        {'name': 'robot2', 'x': '10.0', 'y': '1.5', 'yaw': '0.0',
-         'color': ('0.2', '0.8', '0.2')},   # green
-        {'name': 'robot3', 'x': '17.0', 'y': '2.0', 'yaw': '0.0',
-         'color': ('0.2', '0.2', '0.8')},   # blue
+        {'name': 'robot1', 'x': '10.0', 'y': '2.0', 'yaw': '0.0',
+         'color': ('0.8', '0.2', '0.2')},   # red   — staging zone 1
+        {'name': 'robot2', 'x': '30.0', 'y': '2.0', 'yaw': '0.0',
+         'color': ('0.2', '0.8', '0.2')},   # green — staging zone 2
+        {'name': 'robot3', 'x': '50.0', 'y': '2.0', 'yaw': '0.0',
+         'color': ('0.2', '0.2', '0.8')},   # blue  — staging zone 3
     ]
 
     from launch.substitutions import PythonExpression
@@ -199,8 +200,8 @@ def generate_launch_description():
             parameters=[{'use_sim_time': True}],
         )
 
-        # Delay spawns slightly so Gazebo entity factory service is ready
-        delay = 3.0 + float(i) * 1.5
+        # Delay spawns slightly so Gazebo entity factory service and GUI renderer are fully ready
+        delay = 6.0 + float(i) * 2.0
         ld.add_action(TimerAction(period=delay, actions=[spawn]))
         ld.add_action(TimerAction(period=delay + 1.0, actions=[bridge]))
         ld.add_action(TimerAction(period=delay + 1.0, actions=[pose_bridge]))

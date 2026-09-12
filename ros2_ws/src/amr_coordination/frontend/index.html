@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decentralized Multi-AMR Fleet Console | BEL SIH26123</title>
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Bar -->
+  <header class="app-header">
+    <div class="header-brand">
+      <div class="brand-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+      </div>
+      <div>
+        <h1 class="brand-title">BEL FleetLink <span>SIH26123</span></h1>
+        <p class="brand-subtitle">Decentralized Peer-to-Peer Multi-AMR Warehouse Coordination</p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <div id="connection-pill" class="status-pill offline">
+        <span class="pulse-dot"></span>
+        <span id="connection-text">Connecting to DDS...</span>
+      </div>
+
+      <div class="mesh-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+        <span>Brokerless DDS Mesh</span>
+      </div>
+
+      <button id="btn-estop" class="btn btn-danger">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <rect x="9" y="9" width="6" height="6"></rect>
+        </svg>
+        <span>EMERGENCY HALT</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- KPI Header Strip -->
+  <section class="kpi-strip">
+    <div class="kpi-card">
+      <div class="kpi-header">
+        <span class="kpi-label">Active AMR Fleet</span>
+        <span class="kpi-icon text-cyan">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+            <circle cx="12" cy="5" r="2"></circle>
+            <path d="M12 7v4"></path>
+            <line x1="8" y1="16" x2="8" y2="16"></line>
+            <line x1="16" y1="16" x2="16" y2="16"></line>
+          </svg>
+        </span>
+      </div>
+      <div class="kpi-value-row">
+        <div id="kpi-fleet-count" class="kpi-value">3 / 3</div>
+        <div class="kpi-pill-group">
+          <span id="pill-robot1" class="robot-pill r1">R1: IDLE</span>
+          <span id="pill-robot2" class="robot-pill r2">R2: IDLE</span>
+          <span id="pill-robot3" class="robot-pill r3">R3: IDLE</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-header">
+        <span class="kpi-label">Fleet Throughput</span>
+        <span class="kpi-icon text-emerald">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+        </span>
+      </div>
+      <div class="kpi-value-row">
+        <div class="kpi-value"><span id="kpi-throughput">0.00</span> <span class="kpi-unit">goals/min</span></div>
+        <div class="kpi-subtext">Completed: <strong id="kpi-completed">0</strong> missions</div>
+      </div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-header">
+        <span class="kpi-label">Single-Lane Chokepoint Lock</span>
+        <span class="kpi-icon text-amber">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </span>
+      </div>
+      <div class="kpi-value-row">
+        <div id="kpi-choke-badge" class="choke-badge free">FREE</div>
+        <div id="kpi-choke-subtext" class="kpi-subtext">Distributed Token Available</div>
+      </div>
+    </div>
+
+    <div class="kpi-card">
+      <div class="kpi-header">
+        <span class="kpi-label">Task Queue Backlog</span>
+        <span class="kpi-icon text-indigo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="8" y1="6" x2="21" y2="6"></line>
+            <line x1="8" y1="12" x2="21" y2="12"></line>
+            <line x1="8" y1="18" x2="21" y2="18"></line>
+            <line x1="3" y1="6" x2="3.01" y2="6"></line>
+            <line x1="3" y1="12" x2="3.01" y2="12"></line>
+            <line x1="3" y1="18" x2="3.01" y2="18"></line>
+          </svg>
+        </span>
+      </div>
+      <div class="kpi-value-row">
+        <div id="kpi-queue-count" class="kpi-value">0</div>
+        <div class="kpi-subtext">FIFO Nearest-Idle Buffer</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Layout -->
+  <main class="main-layout">
+    <!-- Left: 2D Interactive Warehouse Floor -->
+    <section class="map-panel">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <h2 class="panel-title">Warehouse Floor (20m × 15m)</h2>
+          <span class="panel-subtitle">Interactive Real-Time Canvas • Click Floor to Dispatch</span>
+        </div>
+        <div class="map-controls">
+          <div class="coord-tag">
+            <span>Pointer: </span><strong id="cursor-coords">X: 10.0m, Y: 7.5m</strong>
+          </div>
+          <button id="btn-reset-view" class="btn btn-secondary btn-sm" title="Center View">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+            Reset
+          </button>
+        </div>
+      </div>
+
+      <div class="canvas-container" id="canvas-container">
+        <canvas id="warehouse-canvas"></canvas>
+        <div id="click-ripple" class="click-ripple"></div>
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-swatch r1-swatch"></span> AMR 1 (Red)</div>
+          <div class="legend-item"><span class="legend-swatch r2-swatch"></span> AMR 2 (Green)</div>
+          <div class="legend-item"><span class="legend-swatch r3-swatch"></span> AMR 3 (Blue)</div>
+          <div class="legend-item"><span class="legend-swatch choke-swatch"></span> Chokepoint Corridor (2.4m)</div>
+          <div class="legend-item"><span class="legend-swatch obstacle-swatch"></span> Dynamic Obstacle</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Mission Control, Logs & Diagnostics -->
+    <aside class="control-panel">
+      <!-- Navigation Tabs -->
+      <nav class="panel-tabs">
+        <button class="tab-btn active" data-tab="tab-dispatch">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+          </svg>
+          Dispatch
+        </button>
+        <button class="tab-btn" data-tab="tab-events">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+          P2P Events
+        </button>
+        <button class="tab-btn" data-tab="tab-diagnostics">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+          Fleet Health
+        </button>
+      </nav>
+
+      <!-- Tab Content 1: Mission Dispatch -->
+      <div id="tab-dispatch" class="tab-content active">
+        <div class="card-section">
+          <h3 class="section-title">Quick Zone Dispatch</h3>
+          <p class="section-desc">Click any warehouse target bay to assign an available robot:</p>
+          <div class="preset-grid">
+            <button class="preset-btn" data-x="3.0" data-y="12.0">
+              <span class="preset-name">Bay 1 (North-West)</span>
+              <span class="preset-coords">X: 3.0, Y: 12.0</span>
+            </button>
+            <button class="preset-btn" data-x="10.0" data-y="13.0">
+              <span class="preset-name">Bay 2 (North-Center)</span>
+              <span class="preset-coords">X: 10.0, Y: 13.0</span>
+            </button>
+            <button class="preset-btn" data-x="17.0" data-y="12.0">
+              <span class="preset-name">Bay 3 (North-East)</span>
+              <span class="preset-coords">X: 17.0, Y: 12.0</span>
+            </button>
+            <button class="preset-btn" data-x="3.0" data-y="2.0">
+              <span class="preset-name">Dock Alpha (Home 1)</span>
+              <span class="preset-coords">X: 3.0, Y: 2.0</span>
+            </button>
+            <button class="preset-btn" data-x="10.0" data-y="1.5">
+              <span class="preset-name">Dock Beta (Home 2)</span>
+              <span class="preset-coords">X: 10.0, Y: 1.5</span>
+            </button>
+            <button class="preset-btn" data-x="17.0" data-y="2.0">
+              <span class="preset-name">Dock Gamma (Home 3)</span>
+              <span class="preset-coords">X: 17.0, Y: 2.0</span>
+            </button>
+            <button class="preset-btn full-width" data-x="10.3" data-y="7.5">
+              <span class="preset-name">Cross Chokepoint Centroid</span>
+              <span class="preset-coords">X: 10.3, Y: 7.5</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card-section">
+          <h3 class="section-title">Precision Coordinate Target</h3>
+          <form id="form-custom-dispatch" class="custom-dispatch-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="select-robot">Assignee</label>
+                <select id="select-robot" class="form-select">
+                  <option value="auto">Auto (Nearest Idle AMR)</option>
+                  <option value="robot1">AMR 1 (Red)</option>
+                  <option value="robot2">AMR 2 (Green)</option>
+                  <option value="robot3">AMR 3 (Blue)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row-coords">
+              <div class="form-group">
+                <label for="input-x">Target X (1 - 19m)</label>
+                <input type="number" id="input-x" min="1.0" max="19.0" step="0.5" value="14.0" required>
+              </div>
+              <div class="form-group">
+                <label for="input-y">Target Y (1 - 14m)</label>
+                <input type="number" id="input-y" min="1.0" max="14.0" step="0.5" value="8.0" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Dispatch AMR Target
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Peer-to-Peer Event Log -->
+      <div id="tab-events" class="tab-content">
+        <div class="card-section fill-height">
+          <div class="events-header">
+            <h3 class="section-title">Live Peer Arbitration Feed</h3>
+            <button id="btn-clear-events" class="btn-text">Clear</button>
+          </div>
+          <div id="events-feed" class="events-feed">
+            <!-- Events injected dynamically by app.js -->
+            <div class="event-item system">
+              <span class="event-time">--:--:--</span>
+              <span class="event-tag">SYSTEM</span>
+              <span class="event-msg">Waiting for DDS telemetry...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3: Fleet Health & Diagnostics -->
+      <div id="tab-diagnostics" class="tab-content">
+        <div class="card-section">
+          <h3 class="section-title">AMR Telemetry & State</h3>
+          <div class="robot-health-cards">
+            <!-- Robot 1 -->
+            <div class="robot-health-card r1-card">
+              <div class="rh-header">
+                <span class="rh-name">🔴 AMR 1</span>
+                <span id="diag-status-r1" class="rh-status idle">IDLE</span>
+              </div>
+              <div class="rh-coords" id="diag-coords-r1">X: 3.00, Y: 2.00, Yaw: 0.0°</div>
+              <div class="rh-reason" id="diag-reason-r1">Normal Navigation</div>
+            </div>
+            <!-- Robot 2 -->
+            <div class="robot-health-card r2-card">
+              <div class="rh-header">
+                <span class="rh-name">🟢 AMR 2</span>
+                <span id="diag-status-r2" class="rh-status idle">IDLE</span>
+              </div>
+              <div class="rh-coords" id="diag-coords-r2">X: 10.00, Y: 1.50, Yaw: 0.0°</div>
+              <div class="rh-reason" id="diag-reason-r2">Normal Navigation</div>
+            </div>
+            <!-- Robot 3 -->
+            <div class="robot-health-card r3-card">
+              <div class="rh-header">
+                <span class="rh-name">🔵 AMR 3</span>
+                <span id="diag-status-r3" class="rh-status idle">IDLE</span>
+              </div>
+              <div class="rh-coords" id="diag-coords-r3">X: 17.00, Y: 2.00, Yaw: 0.0°</div>
+              <div class="rh-reason" id="diag-reason-r3">Normal Navigation</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-section">
+          <h3 class="section-title">Critical Section Watchdog</h3>
+          <div class="diagnostics-table">
+            <div class="diag-row">
+              <span class="diag-key">Corridor Opening</span>
+              <span class="diag-val">2.4m single-lane</span>
+            </div>
+            <div class="diag-row">
+              <span class="diag-key">Heartbeat Lease Rate</span>
+              <span class="diag-val">2.0 Hz (500ms)</span>
+            </div>
+            <div class="diag-row">
+              <span class="diag-key">Crash Eviction Watchdog</span>
+              <span class="diag-val">3.0s expiry</span>
+            </div>
+            <div class="diag-row">
+              <span class="diag-key">Grant Jitter Interval</span>
+              <span class="diag-val">Tbase + pri×0.3s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

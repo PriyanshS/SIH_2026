@@ -1,12 +1,12 @@
 {
   "package_name": "amr_msgs",
-  "output_dir": "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_cpp/amr_msgs",
+  "output_dir": "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_cpp/amr_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotPlan.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/DetectedObstacle.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/ChokeRequest.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotStatus.idl"
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotPlan.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/DetectedObstacle.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/ChokeRequest.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotStatus.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
@@ -108,10 +108,10 @@
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../resource/srv__type_support.hpp.em",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotPlan.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/ChokeRequest.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotStatus.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotPlan.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/ChokeRequest.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotStatus.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl",
@@ -192,9 +192,9 @@
     "/opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl"
   ],
   "type_description_tuples": [
-    "msg/RobotPlan.idl:/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json",
-    "msg/DetectedObstacle.idl:/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/DetectedObstacle.json",
-    "msg/ChokeRequest.idl:/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/ChokeRequest.json",
-    "msg/RobotStatus.idl:/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotStatus.json"
+    "msg/RobotPlan.idl:/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json",
+    "msg/DetectedObstacle.idl:/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/DetectedObstacle.json",
+    "msg/ChokeRequest.idl:/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/ChokeRequest.json",
+    "msg/RobotStatus.idl:/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotStatus.json"
   ]
 }

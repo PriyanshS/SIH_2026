@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs
+CMAKE_SOURCE_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs
+CMAKE_BINARY_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs
 
 # Include any dependencies generated for this target.
 include CMakeFiles/amr_msgs__rosidl_generator_py.dir/depend.make
@@ -72,58 +72,58 @@ include CMakeFiles/amr_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o: CMakeFiles/amr_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o: rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o: CMakeFiles/amr_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o -MF CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o.d -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o -c /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o -MF CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o.d -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o -c /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c > CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c > CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.i
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.s
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o: CMakeFiles/amr_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o: rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o: CMakeFiles/amr_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o -MF CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o.d -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o -c /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o -MF CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o.d -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o -c /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c > CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c > CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.i
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.s
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o: CMakeFiles/amr_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o: rosidl_generator_py/amr_msgs/msg/_choke_request_s.c
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o: CMakeFiles/amr_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o -MF CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o.d -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o -c /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o -MF CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o.d -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o -c /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c > CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c > CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.i
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.s
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o: CMakeFiles/amr_msgs__rosidl_generator_py.dir/flags.make
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o: rosidl_generator_py/amr_msgs/msg/_robot_status_s.c
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o: CMakeFiles/amr_msgs__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o -MF CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o.d -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o -c /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o -MF CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o.d -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o -c /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c > CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c > CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.i
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c -o CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.s
 
 # Object files for target amr_msgs__rosidl_generator_py
 amr_msgs__rosidl_generator_py_OBJECTS = \
@@ -193,7 +193,7 @@ libamr_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/libbuiltin_interfaces__r
 libamr_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libamr_msgs__rosidl_generator_py.so: /opt/ros/jazzy/lib/librcutils.so
 libamr_msgs__rosidl_generator_py.so: CMakeFiles/amr_msgs__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libamr_msgs__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libamr_msgs__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/amr_msgs__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -205,6 +205,6 @@ CMakeFiles/amr_msgs__rosidl_generator_py.dir/clean:
 .PHONY : CMakeFiles/amr_msgs__rosidl_generator_py.dir/clean
 
 CMakeFiles/amr_msgs__rosidl_generator_py.dir/depend:
-	cd /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles/amr_msgs__rosidl_generator_py.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles/amr_msgs__rosidl_generator_py.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/amr_msgs__rosidl_generator_py.dir/depend
 

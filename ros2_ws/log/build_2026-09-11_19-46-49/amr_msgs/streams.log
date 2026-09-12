@@ -1,0 +1,298 @@
+[0.017s] Invoking command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs
+[0.178s] -- The C compiler identification is GNU 13.3.0
+[0.301s] -- The CXX compiler identification is GNU 13.3.0
+[0.324s] -- Detecting C compiler ABI info
+[0.433s] -- Detecting C compiler ABI info - done
+[0.446s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.446s] -- Detecting C compile features
+[0.447s] -- Detecting C compile features - done
+[0.456s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.570s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.570s] -- Detecting CXX compile features
+[0.570s] -- Detecting CXX compile features - done
+[0.604s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.796s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.890s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.947s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.959s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.052s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.138s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.145s] -- Found builtin_interfaces: 2.0.4 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[1.169s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.218s] -- Found nav_msgs: 5.3.8 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[1.934s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.426s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.084s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.092s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.223s] -- Found PythonExtra: /usr/bin/python3  
+[3.680s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.806s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.820s] -- Configuring done (3.8s)
+[3.859s] -- Generating done (0.0s)
+[3.871s] -- Build files have been written to: /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs
+[3.885s] Invoked command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs
+[3.886s] Invoking command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs -- -j12 -l12
+[3.947s] [  3%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[3.947s] [  3%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.957s] [  3%] Built target ament_cmake_python_symlink_amr_msgs
+[4.169s] running egg_info
+[4.170s] creating amr_msgs.egg-info
+[4.185s] writing amr_msgs.egg-info/PKG-INFO
+[4.185s] writing dependency_links to amr_msgs.egg-info/dependency_links.txt
+[4.185s] writing top-level names to amr_msgs.egg-info/top_level.txt
+[4.185s] writing manifest file 'amr_msgs.egg-info/SOURCES.txt'
+[4.239s] reading manifest file 'amr_msgs.egg-info/SOURCES.txt'
+[4.239s] writing manifest file 'amr_msgs.egg-info/SOURCES.txt'
+[4.263s] [  3%] Built target amr_msgs__rosidl_generator_type_description
+[4.280s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.281s] [  4%] Built target amr_msgs__rs
+[4.295s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.305s] [  6%] Built target ament_cmake_python_build_amr_msgs_egg
+[4.702s] [  6%] Built target amr_msgs__cpp
+[4.797s] [ 10%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_plan__functions.c.o[0m
+[4.798s] [ 10%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/detected_obstacle__type_support.c.o[0m
+[4.798s] [ 10%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/detected_obstacle__functions.c.o[0m
+[4.798s] [ 12%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/choke_request__functions.c.o[0m
+[4.798s] [ 13%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_plan__type_support.c.o[0m
+[4.798s] [ 18%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_plan__description.c.o[0m
+[4.798s] [ 18%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/choke_request__type_support.c.o[0m
+[4.798s] [ 18%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_status__functions.c.o[0m
+[4.798s] [ 20%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_status__type_support.c.o[0m
+[4.798s] [ 21%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/detected_obstacle__description.c.o[0m
+[4.804s] [ 24%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/robot_status__description.c.o[0m
+[4.804s] [ 24%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/choke_request__description.c.o[0m
+[4.895s] [ 26%] [32m[1mLinking C shared library libamr_msgs__rosidl_generator_c.so[0m
+[4.945s] [ 26%] Built target amr_msgs__rosidl_generator_c
+[4.958s] [ 35%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.959s] [ 35%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.959s] [ 35%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.959s] [ 35%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.959s] [ 35%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.959s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.334s] [ 38%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/robot_status__type_support.cpp.o[0m
+[5.334s] [ 38%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/robot_plan__type_support.cpp.o[0m
+[5.338s] [ 40%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/choke_request__type_support.cpp.o[0m
+[5.340s] [ 41%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/detected_obstacle__type_support.cpp.o[0m
+[5.425s] [ 43%] [32m[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_c.so[0m
+[5.442s] [ 47%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/detected_obstacle__type_support.cpp.o[0m
+[5.442s] [ 47%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/choke_request__type_support.cpp.o[0m
+[5.442s] [ 47%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/robot_status__type_support.cpp.o[0m
+[5.445s] [ 49%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/robot_plan__type_support.cpp.o[0m
+[5.526s] [ 50%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_msgs/msg/detail/dds_fastrtps/robot_plan__type_support.cpp.o[0m
+[5.535s] [ 50%] Built target amr_msgs__rosidl_typesupport_c
+[5.537s] [ 52%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_msgs/msg/detail/dds_fastrtps/detected_obstacle__type_support.cpp.o[0m
+[5.555s] [ 53%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_msgs/msg/detail/dds_fastrtps/choke_request__type_support.cpp.o[0m
+[5.574s] [ 55%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_msgs/msg/detail/dds_fastrtps/robot_status__type_support.cpp.o[0m
+[5.610s] [ 56%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/detected_obstacle__type_support_c.cpp.o[0m
+[5.613s] [ 58%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/robot_plan__type_support_c.cpp.o[0m
+[5.615s] [ 60%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_msgs/msg/robot_plan__type_support.cpp.o[0m
+[6.009s] [ 61%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_msgs/msg/detail/robot_plan__type_support.c.o[0m
+[6.128s] [ 63%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/choke_request__type_support_c.cpp.o[0m
+[6.172s] [ 64%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_msgs/msg/detail/detected_obstacle__type_support.c.o[0m
+[6.194s] [ 66%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/robot_status__type_support_c.cpp.o[0m
+[6.202s] [ 67%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_msgs/msg/detail/choke_request__type_support.c.o[0m
+[6.277s] [ 69%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_msgs/msg/detected_obstacle__type_support.cpp.o[0m
+[6.304s] [ 70%] [32m[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[6.331s] [ 72%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_msgs/msg/detail/robot_status__type_support.c.o[0m
+[6.469s] [ 73%] [32m[1mLinking C shared library libamr_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.488s] [ 75%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_msgs/msg/choke_request__type_support.cpp.o[0m
+[6.582s] [ 75%] Built target amr_msgs__rosidl_typesupport_introspection_cpp
+[6.608s] [ 76%] [32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_msgs/msg/robot_status__type_support.cpp.o[0m
+[6.622s] [ 76%] Built target amr_msgs__rosidl_typesupport_introspection_c
+[6.678s] [ 78%] [32m[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.866s] [ 78%] Built target amr_msgs__rosidl_typesupport_fastrtps_cpp
+[7.031s] [ 80%] [32m[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.094s] [ 81%] [32m[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_cpp.so[0m
+[7.135s] [ 81%] Built target amr_msgs__rosidl_typesupport_fastrtps_c
+[7.145s] [ 81%] Built target amr_msgs__rosidl_typesupport_cpp
+[7.167s] [ 81%] Built target amr_msgs
+[7.188s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.705s] [ 83%] Built target amr_msgs__py
+[7.728s] [ 87%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_choke_request_s.c.o[0m
+[7.728s] [ 87%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_detected_obstacle_s.c.o[0m
+[7.728s] [ 87%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_plan_s.c.o[0m
+[7.728s] [ 89%] [32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_robot_status_s.c.o[0m
+[7.901s] [ 90%] [32m[1mLinking C shared library libamr_msgs__rosidl_generator_py.so[0m
+[7.957s] [ 90%] Built target amr_msgs__rosidl_generator_py
+[7.980s] [ 95%] [32mBuilding C object CMakeFiles/amr_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.980s] [ 95%] [32mBuilding C object CMakeFiles/amr_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.980s] [ 95%] [32mBuilding C object CMakeFiles/amr_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[8.083s] [100%] [32m[1mLinking C shared module rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[8.084s] [100%] [32m[1mLinking C shared module rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[8.084s] [100%] [32m[1mLinking C shared module rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so[0m
+[8.120s] [100%] Built target amr_msgs_s__rosidl_typesupport_introspection_c
+[8.120s] [100%] Built target amr_msgs_s__rosidl_typesupport_c
+[8.120s] [100%] Built target amr_msgs_s__rosidl_typesupport_fastrtps_c
+[8.136s] Invoked command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs -- -j12 -l12
+[8.137s] Invoking command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs
+[8.147s] -- Install configuration: ""
+[8.147s] -- Execute custom install script
+[8.147s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/ament_index/resource_index/rosidl_interfaces/amr_msgs
+[8.158s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotPlan.json
+[8.167s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/DetectedObstacle.json
+[8.176s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/ChokeRequest.json
+[8.186s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotStatus.json
+[8.196s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/choke_request.h
+[8.206s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__functions.h
+[8.216s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__struct.h
+[8.226s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__type_support.h
+[8.238s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__functions.h
+[8.249s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__struct.h
+[8.258s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__type_support.h
+[8.270s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__functions.h
+[8.281s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__struct.h
+[8.293s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__type_support.h
+[8.305s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__functions.h
+[8.315s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__struct.h
+[8.326s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__type_support.h
+[8.339s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detected_obstacle.h
+[8.349s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/robot_plan.h
+[8.359s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/robot_status.h
+[8.369s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.379s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/environment/library_path.sh
+[8.390s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/environment/library_path.dsv
+[8.402s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__rosidl_typesupport_fastrtps_c.h
+[8.412s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__rosidl_typesupport_fastrtps_c.h
+[8.424s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__rosidl_typesupport_fastrtps_c.h
+[8.436s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_c.h
+[8.448s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.460s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__rosidl_typesupport_introspection_c.h
+[8.471s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__rosidl_typesupport_introspection_c.h
+[8.481s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__rosidl_typesupport_introspection_c.h
+[8.491s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_c.h
+[8.501s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.510s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/choke_request.hpp
+[8.521s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__builder.hpp
+[8.531s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__struct.hpp
+[8.543s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__traits.hpp
+[8.553s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__type_support.hpp
+[8.564s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__builder.hpp
+[8.573s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__struct.hpp
+[8.583s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__traits.hpp
+[8.592s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__type_support.hpp
+[8.601s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__builder.hpp
+[8.611s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__struct.hpp
+[8.619s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__traits.hpp
+[8.629s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__type_support.hpp
+[8.641s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__builder.hpp
+[8.652s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__struct.hpp
+[8.662s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__traits.hpp
+[8.674s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__type_support.hpp
+[8.681s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detected_obstacle.hpp
+[8.690s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/robot_plan.hpp
+[8.700s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/robot_status.hpp
+[8.709s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.718s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__rosidl_typesupport_fastrtps_cpp.hpp
+[8.729s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__rosidl_typesupport_fastrtps_cpp.hpp
+[8.741s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__rosidl_typesupport_fastrtps_cpp.hpp
+[8.751s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__rosidl_typesupport_fastrtps_cpp.hpp
+[8.760s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.771s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/choke_request__rosidl_typesupport_introspection_cpp.hpp
+[8.780s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/detected_obstacle__rosidl_typesupport_introspection_cpp.hpp
+[8.789s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_plan__rosidl_typesupport_introspection_cpp.hpp
+[8.799s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/robot_status__rosidl_typesupport_introspection_cpp.hpp
+[8.808s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/environment/pythonpath.sh
+[8.817s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/environment/pythonpath.dsv
+[8.827s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info/PKG-INFO
+[8.838s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info/SOURCES.txt
+[8.848s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info/dependency_links.txt
+[8.858s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info/top_level.txt
+[8.868s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/__init__.py
+[8.877s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c
+[8.886s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.895s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.904s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so
+[8.913s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.so
+[8.923s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.so
+[8.932s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/__init__.py
+[8.945s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_choke_request.py
+[8.957s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_choke_request_s.c
+[8.968s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_detected_obstacle.py
+[8.978s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_detected_obstacle_s.c
+[8.988s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_plan.py
+[8.997s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_plan_s.c
+[9.007s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_status.py
+[9.017s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_status_s.c
+[9.026s] -- Up-to-date symlink: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.so
+[9.026s] -- Up-to-date symlink: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.so
+[9.026s] -- Up-to-date symlink: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_c.so
+[9.027s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/ament_index/resource_index/rust_packages/amr_msgs
+[9.039s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/rust/Cargo.toml
+[9.050s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/rust/build.rs
+[9.059s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/rust/src/lib.rs
+[9.069s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/rust/src/msg.rs
+[9.079s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/rust/src/msg/rmw.rs
+[9.088s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotPlan.idl
+[9.098s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/DetectedObstacle.idl
+[9.107s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/ChokeRequest.idl
+[9.116s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotStatus.idl
+[9.126s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotPlan.msg
+[9.136s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/DetectedObstacle.msg
+[9.147s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/ChokeRequest.msg
+[9.161s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/msg/RobotStatus.msg
+[9.177s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/ament_index/resource_index/package_run_dependencies/amr_msgs
+[9.192s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/ament_index/resource_index/parent_prefix_path/amr_msgs
+[9.207s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/environment/ament_prefix_path.sh
+[9.225s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/environment/ament_prefix_path.dsv
+[9.238s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/environment/path.sh
+[9.248s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/environment/path.dsv
+[9.259s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/local_setup.bash
+[9.268s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/local_setup.sh
+[9.276s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/local_setup.zsh
+[9.286s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/local_setup.dsv
+[9.295s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/package.dsv
+[9.304s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/ament_index/resource_index/packages/amr_msgs
+[9.314s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake-extras.cmake
+[9.323s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.332s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.344s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[9.354s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[9.364s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.372s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.381s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[9.390s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgsConfig.cmake
+[9.399s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgsConfig-version.cmake
+[9.408s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/package.xml
+[9.417s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_generator_c.so
+[9.417s] -- Set non-toolchain portion of runtime path of "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_generator_c.so" to ""
+[9.417s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_c.so
+[9.418s] -- Set non-toolchain portion of runtime path of "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[9.418s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_c.so
+[9.418s] -- Set non-toolchain portion of runtime path of "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_c.so" to ""
+[9.418s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_c.so
+[9.418s] -- Set non-toolchain portion of runtime path of "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_c.so" to ""
+[9.418s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_cpp.so
+[9.418s] -- Set non-toolchain portion of runtime path of "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.418s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_cpp.so
+[9.419s] -- Set non-toolchain portion of runtime path of "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[9.419s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_cpp.so
+[9.419s] -- Set non-toolchain portion of runtime path of "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_cpp.so" to ""
+[9.464s] Listing '/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs'...
+[9.464s] Compiling '/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/__init__.py'...
+[9.464s] Listing '/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg'...
+[9.465s] Compiling '/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/__init__.py'...
+[9.465s] Compiling '/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_choke_request.py'...
+[9.465s] Compiling '/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_detected_obstacle.py'...
+[9.465s] Compiling '/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_plan.py'...
+[9.465s] Compiling '/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages/amr_msgs/msg/_robot_status.py'...
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_generator_py.so
+[9.471s] -- Set non-toolchain portion of runtime path of "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/libamr_msgs__rosidl_generator_py.so" to ""
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cExport.cmake
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cExport-noconfig.cmake
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cExport.cmake
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cExport.cmake
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[9.471s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cppExport.cmake
+[9.472s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.472s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.472s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[9.472s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.472s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cppExport.cmake
+[9.472s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[9.472s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_pyExport.cmake
+[9.472s] -- Installing: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_pyExport-noconfig.cmake
+[9.475s] Invoked command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs

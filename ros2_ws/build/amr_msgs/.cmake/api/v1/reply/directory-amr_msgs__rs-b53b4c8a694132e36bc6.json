@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "amr_msgs__rs",
+		"source" : "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/amr_msgs__rs"
+	}
+}

@@ -34,6 +34,7 @@ setup(
             'metrics_logger = amr_coordination.metrics_logger:main',
             'goal_dispatcher = amr_coordination.goal_dispatcher:main',
             'send_goal = amr_coordination.send_goal:main',
+            'web_bridge_node = amr_coordination.web_bridge_node:main',
         ],
     },
 )

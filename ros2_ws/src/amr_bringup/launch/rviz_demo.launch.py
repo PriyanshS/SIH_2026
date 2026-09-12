@@ -1,39 +1,31 @@
-"""Interactive RViz demo launch — Gazebo + Nav2 + Dispatcher mode + RViz.
+"""RViz-only launch — opens RViz2 with the multi-robot config.
 
-In this mode, robots sit in IDLE waiting for user/evaluator input.
-Click anywhere on the map in RViz using the 'Publish Point' tool (hotkey 'p')
-or the '2D Goal Pose' tool to dynamically dispatch the nearest robot to that location in real time!
+This launch file opens ONLY RViz2 for 3D visualization and point-dispatch.
+It does NOT start Gazebo. Run sim_world.launch.py separately (or via the
+launcher) to have a live simulation to visualize.
+
+Usage:
+  ros2 launch amr_bringup rviz_demo.launch.py
 """
 
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    pkg_amr_bringup = get_package_share_directory('amr_bringup')
-    headless = LaunchConfiguration('headless')
+    pkg_amr_gazebo = get_package_share_directory('amr_gazebo')
 
-    declare_headless = DeclareLaunchArgument(
-        'headless', default_value='false',
-        description='Run Gazebo in server-only headless mode'
+    rviz_config = os.path.join(pkg_amr_gazebo, 'rviz', 'multi_robot.rviz')
+
+    rviz_node = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config],
+        parameters=[{'use_sim_time': True}],
+        output='screen',
     )
 
-    full_demo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(pkg_amr_bringup, 'launch', 'full_demo.launch.py')
-        ),
-        launch_arguments={
-            'mode': 'dispatcher',
-            'rviz': 'true',
-            'headless': headless,
-        }.items(),
-    )
-
-    return LaunchDescription([
-        declare_headless,
-        full_demo,
-    ])
+    return LaunchDescription([rviz_node])

@@ -1,8 +1,8 @@
-# Install script for directory: /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/amr_msgs__rs
+# Install script for directory: /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/amr_msgs__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

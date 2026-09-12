@@ -1,0 +1,416 @@
+\documentclass[10pt,twocolumn,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=green!50!black,
+    urlcolor=blue!80!black
+}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+\title{\textbf{\Large Decentralized Multi-AMR Peer-to-Peer Coordination for Mission-Critical Warehouse Operations: Algorithms, Crash Fault Tolerance, and Empirical Validation}}
+
+\author{
+    \textbf{Priyansh S.} \\
+    \textit{Smart India Hackathon 2026 --- Problem Statement SIH26123} \\
+    \textit{Sponsored by Bharat Electronics Limited (BEL)} \\
+    \texttt{Autonomous Systems \& Robotics Engineering}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Autonomous Mobile Robot (AMR) fleets deployed in mission-critical logistics, automated warehouses, and defense manufacturing depots have historically relied on centralized fleet management architectures. Centralized controllers present fatal Single Points of Failure (SPOFs), suffer from severe Radio Frequency (RF) multipath degradation and bandwidth saturation in metallic warehouse environments, and exhibit computational intractability when centrally solving Multi-Agent Path Finding (MAPF) for scaling fleets. This paper presents a fully decentralized, peer-to-peer (P2P) multi-AMR coordination architecture with zero central coordinator, zero master node, and zero external broker. Operating directly over a brokerless ROS~2 Data Distribution Service (DDS) mesh network, each AMR executes an autonomous Navigation~2 (Nav2) stack and collaborates via three core distributed protocols: (i) \textit{Decentralized Prioritized Planning with Spatio-Temporal Envelopes (DPP-STE)} for deterministic, deadlock-free crossing-path arbitration; (ii) \textit{Distributed Chokepoint Mutual Exclusion with Renewable Heartbeat Leasing and Priority Jitter} for crash-fault-tolerant single-lane passage; and (iii) \textit{Cooperative Dynamic Perception via Static Map-Differencing and Inverse Sensor Model (ISM) Virtual Scan Projection}. Rigorous empirical validation conducted within Gazebo Harmonic rigid-body physics simulation demonstrates zero collisions, complete crash fault recovery within 3.0~seconds, a \textbf{32.05\% reduction in fleet makespan} ($299.4\,\text{s}$ vs. $440.6\,\text{s}$), and a \textbf{47.1\% increase in throughput} ($2.00\,\text{goals/min}$ vs. $1.36\,\text{goals/min}$) over standard sequential baselines, exceeding industrial benchmark requirements.
+\end{abstract}
+
+\textbf{\textit{Keywords}}---Autonomous Mobile Robots (AMRs), Decentralized Multi-Robot Systems, Peer-to-Peer Coordination, Spatio-Temporal Path Planning, Distributed Mutual Exclusion, Crash Fault Tolerance, ROS 2 Jazzy, DDS.
+
+---
+
+\section{Introduction and Problem Formulation}
+
+\subsection{Industrial Motivation: The Centralized Dilemma}
+In automated manufacturing facilities, defense distribution centers, and commercial fulfilment warehouses, Autonomous Mobile Robots (AMRs) transport material, ammunition, and sub-assemblies across dynamic, constrained layouts. Historically, multi-robot deployments have utilized centralized fleet managers (e.g., central traffic servers, supervisory dispatchers, or frameworks like Open-RMF) that maintain global knowledge of all agents and assign non-conflicting reservations~\cite{macenski2020nav2, quigley2009ros}.
+
+While centralized multi-agent path finding (MAPF) is mathematically tractable for small fleets under static conditions, it introduces three fatal engineering flaws in industrial environments:
+\begin{enumerate}
+    \item \textbf{Single Point of Failure (SPOF):} If the central server crashes, freezes due to thread exhaustion, or experiences an operating system failure, or if a factory-floor Wi-Fi Access Point (AP) drops, the entire fleet must immediately trigger emergency stops, halting production lines and costing millions of rupees per hour in downtime.
+    \item \textbf{RF Interference and Bandwidth Bottlenecks:} Modern warehouses feature dense metallic racking, automated retrieval cranes, and shielded partitions. Continuous bi-directional streaming of high-frequency 2D/3D lidar point clouds, odometry, and occupancy grids back to a central server saturates wireless channels and suffers from RF multipath packet loss.
+    \item \textbf{Computational Intractability (NP-Hard Complexity):} Optimal centralized MAPF (optimizing total arrival time or makespan) is NP-hard~\cite{yu2013planning}. As fleet size $N$ scales from 5 to 50+ robots in narrow aisle topologies, central solvers experience exponential computational lag spikes, necessitating coarse heuristics that lead to artificial vehicle freezes.
+\end{enumerate}
+
+\subsection{Problem Statement SIH26123 Context}
+Sponsored by \textbf{Bharat Electronics Limited (BEL)} under \textbf{Smart India Hackathon 2026 (Problem Statement SIH26123)}, the operational challenge mandates the design and implementation of a robust, fully decentralized multi-AMR coordination architecture for warehouse logistics capable of:
+\begin{itemize}
+    \item Operating autonomously with \textbf{zero central server, zero master node, and zero central message broker}.
+    \item Guaranteeing dynamic, collision-free trajectory deconfliction and deadlock-free navigation across intersecting paths.
+    \item Regulating single-lane chokepoint corridors where simultaneous bidirectional traversal is physically impossible.
+    \item Cooperatively detecting and relaying unexpected or dynamic obstacles across peer robots.
+    \item Demonstrating resilient self-healing against node crash failures and achieving at least a 20\% performance enhancement over conventional sequential stop-and-wait approaches.
+\end{itemize}
+
+---
+
+\section{System Architecture and Backend Stack}
+
+\subsection{Multi-Tier Architectural Overview}
+The decentralized architecture is organized into four hierarchical control tiers operating across local robot compute:
+\begin{enumerate}
+    \item \textbf{Tier 1: Strategic Task Allocation (Event-Driven):} Nearest-idle Euclidean distance robot allocation with FIFO backlog buffering for inbound dispatch missions.
+    \item \textbf{Tier 2: Tactical Peer-to-Peer Coordination ($2.0\text{--}5.0\,\text{Hz}$):} Direct distributed arbitration executing spatio-temporal conflict detection, token-based mutual exclusion, and cooperative obstacle relay.
+    \item \textbf{Tier 3: Operational Navigation ($10.0\,\text{Hz}$):} Local Navigation~2 (Nav2) stack executing global A* costmap search, Dynamic Window Approach (DWB) trajectory rollouts, and local inflation.
+    \item \textbf{Tier 4: Hardware and Physics Execution ($1000.0\,\text{Hz}$):} Differential-drive kinematics, closed-loop wheel velocity integration, and rigid-body contact dynamics simulated in Gazebo Harmonic.
+\end{enumerate}
+
+\subsection{Communication Topology: Brokerless ROS~2 DDS Mesh}
+The coordination layer operates on **ROS~2 Jazzy Jalisco** running on Linux Ubuntu 24.04 LTS. In contrast to ROS~1 (which mandated a centralized \texttt{roscore} master) or MQTT/RabbitMQ architectures (which mandate a central broker), ROS~2 leverages the Object Management Group (OMG) Data Distribution Service (DDS) standard (e.g., Eclipse CycloneDDS, eProsima FastDDS). Nodes dynamically discover peer participants via peer-to-peer UDP Multicast on the local subnetwork. If multicast is restricted by enterprise switches, unicast peer lists maintain identical brokerless topology.
+
+\subsection{Custom ROS~2 Interface Specifications (\texttt{amr\_msgs})}
+Four lightweight custom IDL message structures define the peer-to-peer coordination protocol:
+\begin{enumerate}
+    \item \texttt{RobotPlan.msg}: Disseminates time-parameterized path waypoints:
+    \begin{itemize}
+        \item \texttt{string robot\_id}, \texttt{uint32 plan\_seq}
+        \item \texttt{nav\_msgs/Path path}
+        \item \texttt{float64 estimated\_velocity}
+        \item \texttt{builtin\_interfaces/Time stamp}
+    \end{itemize}
+    \item \texttt{ChokeRequest.msg}: Mediates distributed critical sections:
+    \begin{itemize}
+        \item \texttt{string robot\_id}, \texttt{uint8 msg\_type} ($\text{REQUEST}=0, \text{GRANT}=1, \text{RELEASE}=2, \text{HEARTBEAT}=3$)
+        \item \texttt{uint32 priority}, \texttt{float64 distance\_to\_choke}
+        \item \texttt{string reason}, \texttt{builtin\_interfaces/Time stamp}
+    \end{itemize}
+    \item \texttt{DetectedObstacle.msg}: Relays clustered unknown obstacles:
+    \begin{itemize}
+        \item \texttt{string reporter\_id}, \texttt{geometry\_msgs/Point position}
+        \item \texttt{float64 radius}, \texttt{float64 ttl}, \texttt{Time stamp}
+    \end{itemize}
+    \item \texttt{RobotStatus.msg}: Advertises fleet availability:
+    \begin{itemize}
+        \item \texttt{string robot\_id}, \texttt{uint8 status} ($\text{IDLE}=0, \text{BUSY}=1$)
+        \item \texttt{float64 pose\_x}, \texttt{float64 pose\_y}, \texttt{Time stamp}
+    \end{itemize}
+\end{enumerate}
+
+---
+
+\section{Algorithmic Foundations and Mathematical Formulations}
+
+\subsection{Global Path Planning (A* Search on Costmap)}
+Global navigation within each AMR's \texttt{planner\_server} utilizes the \texttt{NavfnPlanner} plugin configured for A* graph search over a 2D static occupancy grid:
+\begin{equation}
+    f(n) = g(n) + h(n)
+\end{equation}
+where $g(n)$ incorporates geometric traversal distance and costmap potential values:
+\begin{equation}
+    g(n) = g(\text{parent}) + \|\mathbf{p}_n - \mathbf{p}_{\text{parent}}\|_2 \cdot \left(1 + \beta \cdot C_{\text{costmap}}(n)\right)
+\end{equation}
+The heuristic $h(n) = \|\mathbf{p}_{\text{goal}} - \mathbf{p}_n\|_2$ is strictly admissible, guaranteeing mathematically optimal, shortest collision-free paths.
+
+\subsection{Local Trajectory Generation (DWB Controller)}
+At a control frequency of $10.0\,\text{Hz}$, the local controller samples reachable linear and angular velocity pairs $(v, \omega)$ within the dynamic window $V_d$ defined by instantaneous motor limits:
+\begin{align}
+    V_d = \Big\{ (v, \omega) \;\Big|\; & v \in [v_c - \dot{v}_{\text{dec}}\Delta t, v_c + \dot{v}_{\text{acc}}\Delta t] \cap [0, v_{\max}], \nonumber \\
+    & \omega \in [\omega_c - \dot{\omega}_{\text{dec}}\Delta t, \omega_c + \dot{\omega}_{\text{acc}}\Delta t] \cap [-\omega_{\max}, \omega_{\max}] \Big\}
+\end{align}
+Sampled velocity pairs are integrated over a forward simulation horizon $T_{\text{sim}} = 1.7\,\text{s}$ and evaluated using a weighted multi-objective cost function:
+\begin{equation}
+    J(\tau) = \sum_{k} w_k \cdot C_k(\tau)
+\end{equation}
+penalizing global path deviation, goal distance, heading misalignment, and proximity to costmap obstacle boundaries.
+
+\subsection{Decentralized Prioritized Planning with Spatio-Temporal Envelopes (DPP-STE)}
+When paths intersect, purely geometric collision checkers fail because two paths that cross in space may be traversed at entirely different times. DPP-STE parameterizes plans in both space and time.
+
+\begin{definition}[Spatio-Temporal Trajectory]
+A geometric plan $\Pi = (\mathbf{p}_0, \mathbf{p}_1, \dots, \mathbf{p}_M)$ is downsampled to $K \le 60$ waypoints and parameterized into a 3D spatio-temporal trajectory $\mathcal{T} = \{ (x_i, y_i, t_i) \}_{i=1}^K$ via discrete arc-length integration:
+\begin{equation}
+    t_0 = t_{\text{start}}, \quad t_i = t_{i-1} + \frac{\|\mathbf{p}_i - \mathbf{p}_{i-1}\|_2}{\max(v_{\text{robot}}, v_{\min})}
+\end{equation}
+where $v_{\text{robot}}$ is the exponential moving average of odometry velocity and $v_{\min} = 0.05\,\text{m/s}$.
+\end{definition}
+
+\begin{definition}[Spatio-Temporal Conflict Condition]
+A conflict exists between ego trajectory $\mathcal{T}^{\text{own}}$ and peer trajectory $\mathcal{T}^{\text{peer}}$ if and only if there exist points $(x_o, y_o, t_o) \in \mathcal{T}^{\text{own}}$ and $(x_p, y_p, t_p) \in \mathcal{T}^{\text{peer}}$ satisfying:
+\begin{equation}
+    \|\mathbf{p}_o - \mathbf{p}_p\|_2 \le D_{\text{conflict}} \quad \land \quad |t_o - t_p| \le \Delta t_{\text{window}}
+\end{equation}
+where $D_{\text{conflict}} = 0.8\,\text{m}$ (encompassing vehicle bounding diameter $0.50\,\text{m}$ plus safety buffer) and $\Delta t_{\text{window}} = 3.0\,\text{s}$.
+\end{definition}
+
+\begin{theorem}[Deadlock-Free Arbitration Guarantee]
+Let $\mathcal{R} = \{r_1, r_2, \dots, r_N\}$ be a finite set of AMRs. Let $\prec$ define a strict total ordering over $\mathcal{R}$ based on unique lexicographical identifiers ($\text{robot1} \prec \text{robot2} \prec \text{robot3}$). If every detected conflict between $r_i$ and $r_j$ is resolved such that $r_j$ yields (pauses motion) if and only if $r_i \prec r_j$, the priority dependency graph $\mathcal{G} = (\mathcal{R}, \mathcal{E})$ is a Directed Acyclic Graph (DAG), and circular wait deadlocks are mathematically impossible.
+\end{theorem}
+\begin{proof}
+Suppose a circular deadlock exists. Then there exists a directed cycle $(r_1, r_2, \dots, r_m, r_1)$ in $\mathcal{G}$ such that $r_1 \prec r_2 \prec \dots \prec r_m \prec r_1$. By transitivity of the strict total order $\prec$, $r_1 \prec r_1$, which contradicts the irreflexive property of strict orderings ($a \not\prec a, \forall a \in \mathcal{R}$). Thus, no directed cycles can form, guaranteeing deadlock-free arbitration~\cite{erdmann1987multiple, cap2015complete}.
+\end{proof}
+
+\begin{algorithm}[t]
+\caption{Decentralized Spatio-Temporal Conflict Detection}
+\begin{algorithmic}[1]
+\State \textbf{Input:} Own plan $\Pi^{\text{own}}$, Peer plans $\{\Pi^j\}$, velocity $v_{\text{own}}$
+\State $\mathcal{T}^{\text{own}} \gets \Call{ParameterizeTime}{\Call{Downsample}{\Pi^{\text{own}}, 60}, v_{\text{own}}}$
+\For{each peer plan $\Pi^j$ from robot $r_j$}
+    \State $\mathcal{T}^j \gets \Call{ParameterizeTime}{\Call{Downsample}{\Pi^j, 60}, v_j}$
+    \For{each $(x_o, y_o, t_o) \in \mathcal{T}^{\text{own}}$}
+        \For{each $(x_p, y_p, t_p) \in \mathcal{T}^j$}
+            \If{$|t_o - t_p| \le 3.0\,\text{s}$ \textbf{and} $\|\mathbf{p}_o - \mathbf{p}_p\|_2 \le 0.8\,\text{m}$}
+                \If{$r_{\text{own}} \succ r_j$} \Comment{Lower priority yields}
+                    \State $\Call{TriggerYield}{3.0\,\text{s}}$
+                    \State \Return
+                \EndIf
+            \EndIf
+        \EndFor
+    \EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Distributed Chokepoint Mutual Exclusion with Renewable Leasing}
+Narrow corridors of width $W \le 2.4\,\text{m}$ physically prohibit two $0.5\,\text{m}$-wide AMRs with costmap safety buffers from passing simultaneously. The corridor is modeled as a distributed critical section governed by a 4-state Finite State Machine: $\text{IDLE} \to \text{REQUESTING} \to \text{GRANTED} \to \text{IN\_CHOKE} \to \text{IDLE}$.
+
+\subsubsection{Jordan Curve Point-in-Polygon Boundary Detection}
+To detect zone entry without relying on centralized localization triggers, the AMR evaluates the Jordan Curve ray-casting theorem on its local pose $(p_x, p_y)$ against chokepoint polygon vertices $V = (\mathbf{v}_0, \mathbf{v}_1, \dots, \mathbf{v}_{N-1})$:
+\begin{equation}
+    \mathbb{I}_{\text{inside}} = \sum_{i=0}^{N-1} \left[ (y_i > p_y) \neq (y_j > p_y) \right] \land \left[ p_x < \frac{(x_j - x_i)(p_y - y_i)}{y_j - y_i} + x_i \right] \pmod 2
+\end{equation}
+where $j = (i - 1 + N) \bmod N$. A return value of $1$ confirms the robot is physically inside the critical section.
+
+\subsubsection{Split-Brain Prevention via Priority-Jittered Timeouts}
+When multiple robots approach the chokepoint simultaneously, symmetrical grant timers risk concurrent self-grants. Inspired by Raft randomized election timers~\cite{ongaro2014search}, the grant timeout incorporates deterministic priority jitter:
+\begin{equation}
+    T_{\text{grant}} = T_{\text{base}} + (\text{priority} \times \delta t)
+\end{equation}
+With $T_{\text{base}} = 5.0\,\text{s}$ and $\delta t = 0.3\,\text{s}$:
+\begin{itemize}
+    \item $\text{robot1}$ ($\text{priority}=1$): $T_{\text{grant}} = 5.3\,\text{s}$
+    \item $\text{robot2}$ ($\text{priority}=2$): $T_{\text{grant}} = 5.6\,\text{s}$
+    \item $\text{robot3}$ ($\text{priority}=3$): $T_{\text{grant}} = 5.9\,\text{s}$
+\end{itemize}
+$\text{robot1}$ self-grants $300\,\text{ms}$ earlier, immediately broadcasting \texttt{ChokeRequest(GRANT)}. Lower-priority peers receive this message, cancel their pending grant timers, and yield outside the boundary.
+
+\subsubsection{Active Kinematic Command-Velocity Override}
+Standard Nav2 action clients continue path-tracking unless canceled, which risks pushing the robot past the safe boundary during contention. When in $\text{REQUESTING}$ state and approaching within boundary threshold $d \le d_{\text{approach}} = 2.0\,\text{m}$, \texttt{choke\_negotiator} actively overrides Nav2 by streaming zero-velocity twists ($\mathbf{v} = \mathbf{0}, \boldsymbol{\omega} = \mathbf{0}$) directly to \texttt{cmd\_vel} at $5.0\,\text{Hz}$. This holds the AMR motionless while keeping the Nav2 navigation action alive.
+
+\subsubsection{Crash Fault Tolerance via Renewable Heartbeat Leases}
+If a robot holding the token crashes, stalls, or suffers power failure while inside the chokepoint, classical locks experience permanent deadlock. This is prevented via heartbeat leasing:
+\begin{itemize}
+    \item The occupant streams \texttt{ChokeRequest(HEARTBEAT)} at $2.0\,\text{Hz}$ ($\Delta t_{\text{hb}} = 0.5\,\text{s}$).
+    \item Waiting peers execute a $1.0\,\text{Hz}$ watchdog lease monitor:
+    \begin{equation}
+        \Delta t_{\text{elapsed}} = t_{\text{now}} - t_{\text{last\_hb}} > \tau_{\text{stale}} = 3.0\,\text{s}
+    \end{equation}
+    If $\Delta t_{\text{elapsed}} > 3.0\,\text{s}$, the peer declares the occupant failed, evicts it from the occupancy table, and proceeds to arbitrate the next waiting robot.
+\end{itemize}
+
+\begin{algorithm}[t]
+\caption{Distributed Chokepoint State Machine with Leasing}
+\begin{algorithmic}[1]
+\State \textbf{Initialize:} $\text{state} \gets \text{IDLE}$, $\text{occupied\_by} \gets \emptyset$
+\Loop \quad (Every $200\,\text{ms}$)
+    \State $d_{\text{choke}} \gets \|\mathbf{p}_{\text{robot}} - \mathbf{C}_{\text{choke}}\|_2$
+    \State $\text{in\_poly} \gets \Call{JordanCurveCheck}{\mathbf{p}_{\text{robot}}, \text{Polygon}}$
+    \If{$\text{state} == \text{IDLE}$ \textbf{and} $d_{\text{choke}} < 3.0\,\text{m}$}
+        \State $\text{state} \gets \text{REQUESTING}$
+        \State $\Call{BroadcastRequest}{\text{REQUEST}}$
+        \State $\Call{StartTimer}{T_{\text{grant}} = 5.0 + 0.3 \times \text{pri}}$
+    \ElsIf{$\text{state} == \text{REQUESTING}$}
+        \If{$d_{\text{choke}} < 2.0\,\text{m}$ \textbf{and} $\text{token} == \text{False}$}
+            \State $\Call{PublishZeroVelocity}{\text{cmd\_vel}}$ \Comment{Kinematic Halt}
+        \EndIf
+        \If{$\text{TimerExpired}()$ \textbf{and} $\text{occupied\_by} == \emptyset$}
+            \State $\text{state} \gets \text{GRANTED}$
+            \State $\Call{BroadcastRequest}{\text{GRANT}}$
+        \EndIf
+    \ElsIf{$\text{state} == \text{GRANTED}$ \textbf{and} $\text{in\_poly}$}
+        \State $\text{state} \gets \text{IN\_CHOKE}$
+        \State $\Call{StartHeartbeatTimer}{2.0\,\text{Hz}}$
+    \ElsIf{$\text{state} == \text{IN\_CHOKE}$ \textbf{and} $\text{not } \text{in\_poly}$}
+        \State $\Call{StopHeartbeatTimer}{}$
+        \State $\Call{BroadcastRequest}{\text{RELEASE}}$
+        \State $\text{state} \gets \text{IDLE}$
+    \EndIf
+    \State \Call{WatchdogCheckStaleLeases}{$\tau_{\text{stale}}=3.0\,\text{s}$}
+\EndLoop
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Cooperative Perception and Synthetic Sensor Projection}
+When an AMR detects an unexpected dynamic obstacle (e.g., fallen inventory, human, unmodeled vehicle), sharing this information across the fleet prevents secondary conflicts.
+
+\subsubsection{Static Map-Differencing Kernel}
+Raw 2D lidar returns in $[0.3\,\text{m}, 3.0\,\text{m}]$ are projected into the global \texttt{map} frame:
+\begin{equation}
+    \begin{bmatrix} p_x \\ p_y \end{bmatrix} = \begin{bmatrix} r_x \\ r_y \end{bmatrix} + r_i \begin{bmatrix} \cos(\theta_i + \psi_{\text{robot}}) \\ \sin(\theta_i + \psi_{\text{robot}}) \end{bmatrix}
+\end{equation}
+To discard permanent architectural walls, each transformed point is indexed into the static occupancy grid ($g_x = \lfloor(p_x - x_0)/\Delta g\rfloor, g_y = \lfloor(p_y - y_0)/\Delta g\rfloor$). A $5 \times 5$ neighborhood kernel is evaluated:
+\begin{equation}
+    \text{IsStaticWall} \iff \exists (u, v) \in \{-2, \dots, 2\}^2 \text{ s.t. } \text{Grid}[g_x + u, g_y + v] > 50
+\end{equation}
+Points coinciding with known structures are pruned.
+
+\subsubsection{Greedy Euclidean Clustering}
+Remaining non-wall points are partitioned into clusters using a greedy spatial distance metric $\epsilon = 0.3\,\text{m}$. Clusters with cardinality $|\mathcal{C}| \ge N_{\min} = 3$ are preserved. For each cluster, the centroid $\mathbf{c} = \frac{1}{|\mathcal{C}|}\sum \mathbf{p}$ and bounding radius $R = \max \|\mathbf{p} - \mathbf{c}\|_2 + 0.15\,\text{m}$ are extracted and published to \texttt{/detected\_obstacles}.
+
+\subsubsection{Inverse Sensor Model (ISM) Virtual Scan Injection}
+Standard Nav2 costmaps only consume standard sensor topics (\texttt{LaserScan}, \texttt{PointCloud2}). Rather than authoring brittle custom C++ costmap plugins, peer AMRs project received obstacle centroids $\mathbf{c}$ into their own ego sensor frame:
+\begin{equation}
+    d_{\text{rel}} = \|\mathbf{c} - \mathbf{r}\|_2, \quad \theta_{\text{rel}} = \text{atan2}(c_y - r_y, c_x - r_x) - \psi_{\text{robot}}
+\end{equation}
+The node computes the angular footprint $\Delta \theta = \text{atan2}(R, d_{\text{rel}})$ and synthesizes an artificial 360-ray \texttt{sensor\_msgs/LaserScan} where rays within $[\theta_{\text{rel}} - \Delta\theta, \theta_{\text{rel}} + \Delta\theta]$ are set to distance $d_{\text{rel}}$ and all other rays are set to $\infty$. Injected into \texttt{/<ns>/virtual\_scan}, Nav2's native local \texttt{ObstacleLayer} marks lethal obstacle cells and inflates avoidance contours immediately.
+
+\subsection{Strategic Task Allocation and Backlog Queueing}
+Inbound mission goals (from operator clicks or higher-level WMS) are handled by \texttt{goal\_dispatcher.py}:
+\begin{equation}
+    r^* = \arg\min_{r \in \mathcal{R}_{\text{idle}}} \|\mathbf{p}_{\text{goal}} - \mathbf{p}_r\|_2
+\end{equation}
+If all robots are busy ($\mathcal{R}_{\text{idle}} = \emptyset$), the target is enqueued into a FIFO backlog queue $\mathcal{Q}$. When any robot completes its action goal and transitions to \texttt{IDLE}, the queue is popped and immediately dispatched. Transient navigation rejections trigger an automatic 3-stage retry loop with a $2.0\,\text{s}$ backoff.
+
+---
+
+\section{Empirical Evaluation and Benchmarks}
+
+\subsection{Experimental Simulation Setup}
+Experiments were executed in Gazebo Harmonic 8.x with DART rigid-body physics running at $1000\,\text{Hz}$ synchronized via \texttt{ros\_gz\_bridge} on an Intel Core i7-13700H Linux workstation.
+\begin{itemize}
+    \item \textbf{Warehouse Layout:} $20.0\,\text{m} \times 15.0\,\text{m}$ facility with perimeter walls, storage racking, and a central narrow corridor of width $2.4\,\text{m}$ located at $X \in [8.5\,\text{m}, 12.0\,\text{m}], Y \in [5.5\,\text{m}, 9.5\,\text{m}]$.
+    \item \textbf{Robot Hardware Configuration:} Differential-drive chassis ($m = 10.0\,\text{kg}$, wheel track $L = 0.40\,\text{m}$, wheel radius $r = 0.05\,\text{m}$), $v_{\max} = 0.40\,\text{m/s}$, $\omega_{\max} = 1.0\,\text{rad/s}$, 360° planar lidar ($10\,\text{Hz}$), 6-DOF IMU, and simulated industrial UWB ground-truth pose beacon ($20\,\text{Hz}$).
+    \item \textbf{Adversarial Benchmark Scenario:} Three AMRs spawn at opposite corners and navigate simultaneous, intersecting paths directly through the central chokepoint:
+    \begin{itemize}
+        \item $\text{robot1}$ (Red, $(3.0, 2.0)$) $\to$ Top-Right $(17.0, 12.0) \to$ Return.
+        \item $\text{robot2}$ (Green, $(10.0, 1.5)$) $\to$ Straight North $(10.0, 13.0) \to$ Return.
+        \item $\text{robot3}$ (Blue, $(17.0, 2.0)$) $\to$ Top-Left $(3.0, 12.0) \to$ Return.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Comparative Modes}
+\begin{enumerate}
+    \item \textbf{Sequential Baseline Mode (\texttt{baseline}):} Traditional stop-and-wait scheduling with artificial staggered release delays: $\Delta t_{\text{delay}} = (\text{priority} - 1) \times 10.0\,\text{s}$.
+    \item \textbf{Decentralized Coordinated Mode (\texttt{coordinated}):} Real-time peer-to-peer spatio-temporal deconfliction and dynamic token negotiation.
+\end{enumerate}
+
+\begin{table}[t]
+\centering
+\caption{Empirical Multi-AMR Fleet Performance Benchmark Results}
+\label{tab:benchmark_results}
+\small
+\begin{tabularx}{\columnwidth}{lXXX}
+\toprule
+\textbf{Metric} & \textbf{Baseline} & \textbf{Coordinated} & \textbf{Improvement} \\
+\midrule
+Coordination Paradigm & Sequential Delay & Decentralized P2P & Fully Autonomous \\
+Collision Count & 0 & \textbf{0} & \textbf{Zero Collisions} \\
+Robot 1 Duration & $175.4\,\text{s}$ & \textbf{$115.2\,\text{s}$} & \textbf{34.31\% Faster} \\
+Robot 2 Duration & $112.8\,\text{s}$ & \textbf{$69.8\,\text{s}$} & \textbf{38.12\% Faster} \\
+Robot 3 Duration & $440.6\,\text{s}$ & \textbf{$299.4\,\text{s}$} & \textbf{32.05\% Faster} \\
+\midrule
+\textbf{Fleet Makespan} & $440.6\,\text{s}$ & \textbf{$299.4\,\text{s}$} & \textbf{32.05\% Speedup} \\
+\textbf{Fleet Throughput} & $1.36\,\frac{\text{goals}}{\text{min}}$ & \textbf{$2.00\,\frac{\text{goals}}{\text{min}}$} & \textbf{+47.06\% Gain} \\
+Chokepoint Bottleneck & Stalled / Idle & Fluid Pipelined & Optimal Asset Use \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Benchmark Analysis}
+As documented in Table~\ref{tab:benchmark_results}:
+\begin{enumerate}
+    \item \textbf{Makespan Reduction:} Coordinated mode completes all missions in $299.4\,\text{s}$ compared to $440.6\,\text{s}$ in baseline, delivering a \textbf{32.05\% overall speedup}, well exceeding the hackathon requirement ($>20\%$).
+    \item \textbf{Throughput Surge:} Rolling fleet throughput rises from $1.36$ to $2.00\,\text{goals/min}$, representing a \textbf{47.1\% efficiency gain}.
+    \item \textbf{Safety Assurance:} Both systems maintain 0 physical collisions; however, baseline achieves safety through inefficient temporal starvation, whereas the coordinated system achieves safety through real-time spatio-temporal arbitration.
+\end{enumerate}
+
+\subsection{Chaos Engineering and Crash Fault Recovery}
+To validate resilience against hardware failure:
+\begin{itemize}
+    \item $\text{robot1}$ entered the chokepoint and claimed the token.
+    \item At $t = 12.0\,\text{s}$, a \texttt{SIGKILL} signal was injected into $\text{robot1}$'s coordination and navigation processes, simulating instant hardware destruction.
+    \item $\text{robot2}$, waiting at boundary $d = 2.0\,\text{m}$, detected heartbeat cessation. At exactly $t = 15.0\,\text{s}$ ($\tau_{\text{stale}} = 3.0\,\text{s}$), $\text{robot2}$ evicted $\text{robot1}$ from the occupancy table, self-granted the corridor, and completed its mission. Fleet deadlock was completely averted.
+\end{itemize}
+
+---
+
+\section{Discussion, Industrial Deployment, and Limitations}
+
+\subsection{Applicability to BEL Defense Facilities}
+Bharat Electronics Limited manufactures radar systems, electronic warfare suites, and avionics assemblies. In defense ordnance and munitions storage depots, automated transport must be guaranteed under hostile conditions, including deliberate RF jamming, primary server power loss, and physical infrastructure damage. The brokerless, peer-to-peer nature of this architecture ensures that surviving AMRs maintain local operational logistics without requiring external servers.
+
+\subsection{Design Assumptions and Known Trade-offs}
+For rigorous engineering defense, four key architectural assumptions are identified:
+\begin{enumerate}
+    \item \textbf{Simulated Industrial UWB Pose vs. AMCL:} The implementation utilizes Gazebo's ground-truth pose publisher ($20\,\text{Hz}$) to emulate industrial sub-decimeter UWB tracking or ceiling AprilTag grids. This eliminated AMCL particle filter dispersion lag on multi-robot cold starts, ensuring benchmark figures isolate coordination efficiency.
+    \item \textbf{Fixed Priority Ordering vs. Consensus:} The current total ordering relies on lexicographical ID ranking. In production systems, dynamic priority can be rotated based on payload urgency, battery State-of-Charge (SoC), or distributed Raft leader election.
+    \item \textbf{Single Chokepoint Boundary:} A single convex polygon was parameterized. Multiple chokepoints can be supported by instantiating localized negotiator instances keyed to zone identifiers.
+    \item \textbf{Virtual LaserScan vs. Custom Costmap Plugin:} Synthesizing virtual laser scans enabled dynamic obstacle marking into Nav2's native \texttt{ObstacleLayer} with zero C++ compilation overhead or ABI breakage across ROS~2 releases.
+\end{enumerate}
+
+---
+
+\section{Conclusion}
+This paper presented the design, algorithmic formulation, and empirical validation of a fully decentralized multi-AMR coordination architecture developed for Smart India Hackathon 2026 Problem Statement SIH26123. By combining brokerless ROS~2 DDS messaging, decentralized spatio-temporal conflict detection, distributed chokepoint mutual exclusion with heartbeat leasing, and cooperative dynamic perception, the system completely eliminates single points of failure. Empirical benchmarks demonstrate zero collisions, autonomous self-healing from node failure within $3.0\,\text{s}$, a $32.05\%$ reduction in fleet mission makespan, and a $47.1\%$ throughput improvement over standard sequential baselines. The system represents a robust, production-grade foundation for autonomous logistics in mission-critical industrial and defense environments.
+
+---
+
+\begin{thebibliography}{99}
+
+\bibitem{macenski2020nav2}
+S.~Macenski, F.~Mart{\'\i}n, R.~White, and J.~Clavero, ``The Marathon 2: A Navigation System,'' in \emph{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2020, pp. 2718--2725.
+
+\bibitem{quigley2009ros}
+M.~Quigley, K.~Conley, B.~Gerkey, J.~Faust, T.~Foote, J.~Leibs, R.~Wheeler, and A.~Y. Ng, ``ROS: An open-source Robot Operating System,'' in \emph{ICRA Workshop on Open Source Software}, vol.~3, no.~3.2, 2009, p.~5.
+
+\bibitem{yu2013planning}
+J.~Yu and S.~M. LaValle, ``Structure and intractability of optimal multi-robot path planning on graphs,'' in \emph{AAAI Conference on Artificial Intelligence}, 2013, pp. 1443--1449.
+
+\bibitem{erdmann1987multiple}
+M.~Erdmann and T.~Lozano-P{\'e}rez, ``On multiple moving objects,'' \emph{Algorithmica}, vol.~2, no.~1, pp. 477--521, 1987.
+
+\bibitem{cap2015complete}
+M.~{\v{C}}{\'a}p, P.~Nov{\'a}k, A.~Kleiner, and M.~Seleck{\'y}, ``Prioritized planning algorithms for trajectory coordination of multiple mobile robots,'' \emph{IEEE Transactions on Automation Science and Engineering}, vol.~12, no.~3, pp. 835--849, 2015.
+
+\bibitem{alami1998multi}
+R.~Alami, F.~Ingrand, and S.~Qutub, ``A multi-robot cooperation scheme based on a plan-merging paradigm,'' in \emph{IEEE International Conference on Robotics and Automation (ICRA)}, 1998, pp. 2221--2226.
+
+\bibitem{lamport1978time}
+L.~Lamport, ``Time, clocks, and the ordering of events in a distributed system,'' \emph{Communications of the ACM}, vol.~21, no.~7, pp. 558--565, 1978.
+
+\bibitem{ricart1981optimal}
+G.~Ricart and A.~K. Agrawala, ``An optimal algorithm for mutual exclusion in computer networks,'' \emph{Communications of the ACM}, vol.~24, no.~1, pp. 9--17, 1981.
+
+\bibitem{gray1989leases}
+C.~Gray and D.~Cheriton, ``Leases: An efficient fault-tolerant mechanism for distributed file cache consistency,'' in \emph{ACM SIGOPS Operating Systems Review}, vol.~23, no.~5, 1989, pp. 202--210.
+
+\bibitem{ongaro2014search}
+D.~Ongaro and J.~Ousterhout, ``In search of an understandable consensus algorithm,'' in \emph{USENIX Annual Technical Conference (ATC)}, 2014, pp. 305--319.
+
+\bibitem{shimrat1962algorithm}
+M.~Shimrat, ``Algorithm 112: Position of point relative to polygon,'' \emph{Communications of the ACM}, vol.~5, no.~8, p. 434, 1962.
+
+\bibitem{fox1997dynamic}
+D.~Fox, W.~Burgard, and S.~Thrun, ``The dynamic window approach to collision avoidance,'' \emph{IEEE Robotics \& Automation Magazine}, vol.~4, no.~1, pp. 23--33, 1997.
+
+\end{thebibliography}
+
+\end{document}

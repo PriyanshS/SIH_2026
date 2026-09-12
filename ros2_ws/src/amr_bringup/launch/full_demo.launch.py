@@ -42,7 +42,7 @@ def generate_launch_description():
         description='Coordination mode: coordinated | baseline | dispatcher'
     )
     declare_rviz = DeclareLaunchArgument(
-        'rviz', default_value='false',
+        'rviz', default_value='true',
         description='Launch RViz2 visualization automatically'
     )
 
@@ -56,7 +56,7 @@ def generate_launch_description():
 
     # 2. Launch Nav2 for each robot
     nav_robot1 = TimerAction(
-        period=10.0,
+        period=12.0,
         actions=[IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(pkg_amr_nav, 'launch', 'robot_nav.launch.py')
@@ -66,7 +66,7 @@ def generate_launch_description():
     )
 
     nav_robot2 = TimerAction(
-        period=12.5,
+        period=14.5,
         actions=[IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(pkg_amr_nav, 'launch', 'robot_nav.launch.py')
@@ -76,7 +76,7 @@ def generate_launch_description():
     )
 
     nav_robot3 = TimerAction(
-        period=15.0,
+        period=17.0,
         actions=[IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(pkg_amr_nav, 'launch', 'robot_nav.launch.py')
@@ -87,7 +87,7 @@ def generate_launch_description():
 
     # 3. Coordination nodes (wait for Nav2 lifecycle managers to activate)
     coordination = TimerAction(
-        period=20.0,
+        period=24.0,
         actions=[IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(pkg_amr_coordination, 'launch', 'coordination.launch.py')
@@ -96,9 +96,9 @@ def generate_launch_description():
         )],
     )
 
-    # 4. Optional RViz2 node (delayed so all Nav2 lifecycle managers are active)
+    # 4. RViz2 node (opens multi_robot.rviz for live visualization & dispatching)
     rviz_node = TimerAction(
-        period=20.0,
+        period=22.0,
         actions=[Node(
             package='rviz2',
             executable='rviz2',

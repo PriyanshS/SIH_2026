@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "amr_msgs/msg/detail/choke_request__struct.h"
+#include "amr_msgs/msg/detail/choke_request__functions.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "amr_msgs/msg/detail/choke_request__type_support.h"
-#include "amr_msgs/msg/detail/choke_request__functions.h"
-#include "amr_msgs/msg/detail/choke_request__struct.h"
 
 #ifdef __cplusplus
 extern "C"

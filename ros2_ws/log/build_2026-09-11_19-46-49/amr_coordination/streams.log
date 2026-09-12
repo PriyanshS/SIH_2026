@@ -1,0 +1,38 @@
+[1.416s] Invoking command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination': AMENT_PREFIX_PATH=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/build --no-deps symlink_data
+[1.690s] running develop
+[1.844s] running egg_info
+[1.844s] creating amr_coordination.egg-info
+[1.861s] writing amr_coordination.egg-info/PKG-INFO
+[1.861s] writing dependency_links to amr_coordination.egg-info/dependency_links.txt
+[1.861s] writing entry points to amr_coordination.egg-info/entry_points.txt
+[1.861s] writing requirements to amr_coordination.egg-info/requires.txt
+[1.861s] writing top-level names to amr_coordination.egg-info/top_level.txt
+[1.861s] writing manifest file 'amr_coordination.egg-info/SOURCES.txt'
+[1.893s] reading manifest file 'amr_coordination.egg-info/SOURCES.txt'
+[1.894s] writing manifest file 'amr_coordination.egg-info/SOURCES.txt'
+[1.910s] running build_ext
+[1.910s] Creating /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/python3.12/site-packages/amr-coordination.egg-link (link to .)
+[1.910s] Installing choke_negotiator script to /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.910s] Installing conflict_detector script to /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.910s] Installing goal_dispatcher script to /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.910s] Installing goal_sequencer script to /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.911s] Installing metrics_logger script to /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.911s] Installing obstacle_relay script to /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.911s] Installing path_sharer script to /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.911s] Installing send_goal script to /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/amr_coordination
+[1.911s] 
+[1.911s] Installed /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination
+[1.911s] running symlink_data
+[1.911s] creating /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/ament_index
+[1.911s] creating /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/ament_index/resource_index
+[1.911s] creating /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/ament_index/resource_index/packages
+[1.911s] symbolically linking /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/resource/amr_coordination -> /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/ament_index/resource_index/packages
+[1.911s] symbolically linking /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/package.xml -> /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/amr_coordination
+[1.911s] creating /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+[1.911s] symbolically linking /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/launch/single_robot_coordination.launch.py -> /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+[1.912s] symbolically linking /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/launch/baseline.launch.py -> /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+[1.912s] symbolically linking /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/launch/coordination.launch.py -> /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/amr_coordination/launch
+[1.912s] creating /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/amr_coordination/config
+[1.912s] symbolically linking /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/config/waypoints.yaml -> /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/amr_coordination/config
+[1.912s] symbolically linking /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/config/chokepoint.yaml -> /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/share/amr_coordination/config
+[1.965s] Invoked command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination' returned '0': AMENT_PREFIX_PATH=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_coordination/lib/python3.12/site-packages:/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_coordination/build --no-deps symlink_data

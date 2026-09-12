@@ -110,6 +110,13 @@ def generate_launch_description():
             }],
         ))
 
+    # Locate results directory dynamically relative to workspace
+    results_dir = os.path.abspath(
+        os.path.join(pkg, '..', '..', '..', '..', 'results')
+    )
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir, exist_ok=True)
+
     # Metrics Logger (one instance)
     ld.add_action(Node(
         package='amr_coordination',
@@ -117,9 +124,7 @@ def generate_launch_description():
         name='metrics_logger',
         output='screen',
         parameters=[{
-            'output_dir': os.path.join(
-                os.path.expanduser('~'), 'Desktop', 'SIH', 'ros2_ws', 'results'
-            ),
+            'output_dir': results_dir,
             'expected_robots': 3,
             'use_sim_time': True,
         }],

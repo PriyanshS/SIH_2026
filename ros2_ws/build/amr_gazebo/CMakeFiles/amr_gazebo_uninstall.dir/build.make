@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neer/Desktop/SIH/ros2_ws/src/amr_gazebo
+CMAKE_SOURCE_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_gazebo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo
+CMAKE_BINARY_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo
 
 # Utility rule file for amr_gazebo_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/amr_gazebo_uninstall.dir/compiler_depend.make
 include CMakeFiles/amr_gazebo_uninstall.dir/progress.make
 
 CMakeFiles/amr_gazebo_uninstall:
-	/usr/bin/cmake -P /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 amr_gazebo_uninstall: CMakeFiles/amr_gazebo_uninstall
 amr_gazebo_uninstall: CMakeFiles/amr_gazebo_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/amr_gazebo_uninstall.dir/clean:
 .PHONY : CMakeFiles/amr_gazebo_uninstall.dir/clean
 
 CMakeFiles/amr_gazebo_uninstall.dir/depend:
-	cd /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neer/Desktop/SIH/ros2_ws/src/amr_gazebo /home/neer/Desktop/SIH/ros2_ws/src/amr_gazebo /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo/CMakeFiles/amr_gazebo_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_gazebo /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_gazebo /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo/CMakeFiles/amr_gazebo_uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/amr_gazebo_uninstall.dir/depend
 

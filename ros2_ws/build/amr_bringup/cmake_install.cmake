@@ -1,8 +1,8 @@
-# Install script for directory: /home/neer/Desktop/SIH/ros2_ws/src/amr_bringup
+# Install script for directory: /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/neer/Desktop/SIH/ros2_ws/install/amr_bringup")
+  set(CMAKE_INSTALL_PREFIX "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_bringup")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

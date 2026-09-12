@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neer/Desktop/SIH/ros2_ws/src/amr_bringup
+CMAKE_SOURCE_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup
+CMAKE_BINARY_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neer/Desktop/SIH/ros2_ws/src/amr_bringup /home/neer/Desktop/SIH/ros2_ws/src/amr_bringup /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup /home/neer/Desktop/SIH/ros2_ws/build/amr_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_bringup /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 

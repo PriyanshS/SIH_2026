@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neer/Desktop/SIH/ros2_ws/src/amr_gazebo
+CMAKE_SOURCE_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_gazebo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo
+CMAKE_BINARY_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo/CMakeFiles /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo/CMakeFiles /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/neer/Desktop/SIH/ros2_ws/build/amr_gazebo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_gazebo/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

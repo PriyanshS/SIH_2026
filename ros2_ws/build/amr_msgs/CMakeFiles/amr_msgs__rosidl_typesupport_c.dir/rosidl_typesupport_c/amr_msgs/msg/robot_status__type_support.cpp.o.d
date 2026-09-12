@@ -1,5 +1,5 @@
 CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/robot_status__type_support.cpp.o: \
- /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_c/amr_msgs/msg/robot_status__type_support.cpp \
+ /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_c/amr_msgs/msg/robot_status__type_support.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -40,11 +40,11 @@ CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/
  /opt/ros/jazzy/include/rcutils/rcutils/sha256.h \
  /opt/ros/jazzy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /opt/ros/jazzy/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
- /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/msg/detail/robot_status__struct.h \
+ /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/msg/detail/robot_status__struct.h \
  /opt/ros/jazzy/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
- /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/msg/detail/robot_status__type_support.h \
- /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/msg/rosidl_generator_c__visibility_control.h \
- /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/msg/detail/robot_status__functions.h \
+ /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/msg/detail/robot_status__type_support.h \
+ /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/msg/detail/robot_status__functions.h \
  /usr/include/c++/13/stdlib.h /usr/include/c++/13/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \

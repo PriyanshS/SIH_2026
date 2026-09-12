@@ -56,20 +56,16 @@ def generate_launch_description():
 
     # Auto-kill robot3's coordination nodes after 75 s (45 s startup + 30 s running)
     # This uses the shell script that sends SIGTERM to all robot3 node processes
+    ws_root = os.path.abspath(os.path.join(pkg_amr_coordination, '..', '..', '..', '..'))
     kill_script = os.path.join(
-        pkg_amr_coordination, '..', '..', '..', '..', '..',
-        'src', 'amr_coordination', 'scripts', 'kill_robot3.sh'
+        ws_root, 'src', 'amr_coordination', 'scripts', 'kill_robot3.sh'
     )
 
     kill_robot3 = TimerAction(
         period=75.0,
         actions=[
             ExecuteProcess(
-                cmd=['bash',
-                     os.path.join(
-                         os.path.expanduser('~'), 'Desktop', 'SIH', 'ros2_ws',
-                         'src', 'amr_coordination', 'scripts', 'kill_robot3.sh'
-                     )],
+                cmd=['bash', kill_script],
                 output='screen',
             )
         ],

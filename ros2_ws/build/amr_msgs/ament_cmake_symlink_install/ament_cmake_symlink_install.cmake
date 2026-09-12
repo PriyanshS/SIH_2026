@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/neer/Desktop/SIH/ros2_ws/install/amr_msgs/${destination}")
+      set(destination "/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_msgs/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -315,158 +315,158 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/amr_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/amr_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/amr_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/amr_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/DetectedObstacle.json" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/DetectedObstacle.json" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/DetectedObstacle.json" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/DetectedObstacle.json" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/ChokeRequest.json" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/ChokeRequest.json" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/ChokeRequest.json" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/ChokeRequest.json" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotStatus.json" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotStatus.json" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotStatus.json" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description/amr_msgs/msg/RobotStatus.json" "DESTINATION" "share/amr_msgs/msg")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/amr_msgs/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/amr_msgs/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/amr_msgs/environment")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/amr_msgs/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/amr_msgs/environment")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/amr_msgs/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/amr_msgs/environment")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_introspection_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_introspection_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_introspection_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_introspection_c/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.h")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_fastrtps_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_introspection_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_introspection_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_introspection_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_introspection_cpp/amr_msgs/" "DESTINATION" "include/amr_msgs/amr_msgs" "PATTERN" "*.hpp")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/amr_msgs/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/amr_msgs/environment")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/amr_msgs/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/amr_msgs/environment")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/amr_msgs/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/amr_msgs/environment")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/amr_msgs/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/amr_msgs/environment")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_python/amr_msgs/amr_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_python/amr_msgs/amr_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_python/amr_msgs/amr_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_python/amr_msgs/amr_msgs.egg-info/" "DESTINATION" "lib/python3.12/site-packages/amr_msgs-0.1.0-py3.12.egg-info")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/" "DESTINATION" "lib/python3.12/site-packages/amr_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/" "DESTINATION" "lib/python3.12/site-packages/amr_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/" "DESTINATION" "lib/python3.12/site-packages/amr_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_py/amr_msgs/" "DESTINATION" "lib/python3.12/site-packages/amr_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "amr_msgs_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/amr_msgs")
-include("/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "amr_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/amr_msgs")
-include("/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "amr_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/amr_msgs")
-include("/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/rust_packages/amr_msgs" "DESTINATION" "share/ament_index/resource_index/rust_packages")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/rust_packages/amr_msgs" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/rust_packages/amr_msgs" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/rust_packages/amr_msgs" "DESTINATION" "share/ament_index/resource_index/rust_packages")
 
-# install(DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_rs/amr_msgs/rust" "DESTINATION" "share/amr_msgs")
-ament_cmake_symlink_install_directory("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" DIRECTORY "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_rs/amr_msgs/rust" "DESTINATION" "share/amr_msgs")
+# install(DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_rs/amr_msgs/rust" "DESTINATION" "share/amr_msgs")
+ament_cmake_symlink_install_directory("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" DIRECTORY "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_rs/amr_msgs/rust" "DESTINATION" "share/amr_msgs")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotPlan.idl" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotPlan.idl" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotPlan.idl" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotPlan.idl" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/ChokeRequest.idl" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/ChokeRequest.idl" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/ChokeRequest.idl" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/ChokeRequest.idl" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotStatus.idl" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotStatus.idl" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotStatus.idl" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotStatus.idl" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/RobotPlan.msg" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/RobotPlan.msg" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/RobotPlan.msg" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/RobotPlan.msg" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/DetectedObstacle.msg" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/DetectedObstacle.msg" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/DetectedObstacle.msg" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/DetectedObstacle.msg" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/ChokeRequest.msg" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/ChokeRequest.msg" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/ChokeRequest.msg" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/ChokeRequest.msg" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/RobotStatus.msg" "DESTINATION" "share/amr_msgs/msg")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/msg/RobotStatus.msg" "DESTINATION" "share/amr_msgs/msg")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/RobotStatus.msg" "DESTINATION" "share/amr_msgs/msg")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/msg/RobotStatus.msg" "DESTINATION" "share/amr_msgs/msg")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/amr_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/amr_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/amr_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/amr_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/amr_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/amr_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/amr_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/amr_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/amr_msgs/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/amr_msgs/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/amr_msgs/environment")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/amr_msgs/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/amr_msgs/environment")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/amr_msgs/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/amr_msgs/environment")
 
 # install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/amr_msgs/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/amr_msgs/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/amr_msgs/environment")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/amr_msgs/environment")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/amr_msgs/environment")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/amr_msgs/environment")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/amr_msgs/environment")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/amr_msgs")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/amr_msgs")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/amr_msgs")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/amr_msgs")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/amr_msgs")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/amr_msgs")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/amr_msgs")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/amr_msgs")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/amr_msgs")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/amr_msgs")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/amr_msgs")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/amr_msgs")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/amr_msgs")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/amr_msgs")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/amr_msgs")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/amr_msgs")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/amr_msgs")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/amr_msgs")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/amr_msgs")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/amr_msgs")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/packages/amr_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/packages/amr_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/packages/amr_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_index/share/ament_index/resource_index/packages/amr_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_cmake/rosidl_cmake_aggregate_target-extras.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_core/amr_msgsConfig.cmake" "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_core/amr_msgsConfig-version.cmake" "DESTINATION" "share/amr_msgs/cmake")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_core/amr_msgsConfig.cmake" "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/ament_cmake_core/amr_msgsConfig-version.cmake" "DESTINATION" "share/amr_msgs/cmake")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_core/amr_msgsConfig.cmake" "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_core/amr_msgsConfig-version.cmake" "DESTINATION" "share/amr_msgs/cmake")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_core/amr_msgsConfig.cmake" "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/ament_cmake_core/amr_msgsConfig-version.cmake" "DESTINATION" "share/amr_msgs/cmake")
 
-# install(FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/package.xml" "DESTINATION" "share/amr_msgs")
-ament_cmake_symlink_install_files("/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs" FILES "/home/neer/Desktop/SIH/ros2_ws/src/amr_msgs/package.xml" "DESTINATION" "share/amr_msgs")
+# install(FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/package.xml" "DESTINATION" "share/amr_msgs")
+ament_cmake_symlink_install_files("/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs" FILES "/home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs/package.xml" "DESTINATION" "share/amr_msgs")

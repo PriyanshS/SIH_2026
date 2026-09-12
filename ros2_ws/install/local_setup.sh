@@ -6,7 +6,7 @@
 # since a plain shell script can't determine its own path when being sourced
 # either use the provided COLCON_CURRENT_PREFIX
 # or fall back to the build time prefix (if it exists)
-_colcon_prefix_sh_COLCON_CURRENT_PREFIX="/home/neer/Desktop/SIH/ros2_ws/install"
+_colcon_prefix_sh_COLCON_CURRENT_PREFIX="/home/piyansh46/Code/SIH_2026/ros2_ws/install"
 if [ -z "$COLCON_CURRENT_PREFIX" ]; then
   if [ ! -d "$_colcon_prefix_sh_COLCON_CURRENT_PREFIX" ]; then
     echo "The build time path \"$_colcon_prefix_sh_COLCON_CURRENT_PREFIX\" doesn't exist. Either source a script for a different shell or set the environment variable \"COLCON_CURRENT_PREFIX\" explicitly." 1>&2

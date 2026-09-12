@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs
+CMAKE_SOURCE_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs
+CMAKE_BINARY_DIR = /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs
 
 # Utility rule file for amr_msgs__rosidl_generator_type_description.
 
@@ -77,8 +77,8 @@ rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json: rosidl_adapter/am
 rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json: rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl
 rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json: rosidl_adapter/amr_msgs/msg/ChokeRequest.idl
 rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json: rosidl_adapter/amr_msgs/msg/RobotStatus.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_generator_type_description__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_generator_type_description__arguments.json
 
 rosidl_generator_type_description/amr_msgs/msg/DetectedObstacle.json: rosidl_generator_type_description/amr_msgs/msg/RobotPlan.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/amr_msgs/msg/DetectedObstacle.json
@@ -106,6 +106,6 @@ CMakeFiles/amr_msgs__rosidl_generator_type_description.dir/clean:
 .PHONY : CMakeFiles/amr_msgs__rosidl_generator_type_description.dir/clean
 
 CMakeFiles/amr_msgs__rosidl_generator_type_description.dir/depend:
-	cd /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs /home/neer/Desktop/SIH/ros2_ws/src/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs /home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/CMakeFiles/amr_msgs__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/CMakeFiles/amr_msgs__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/amr_msgs__rosidl_generator_type_description.dir/depend
 

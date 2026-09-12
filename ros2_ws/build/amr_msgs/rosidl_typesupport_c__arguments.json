@@ -1,12 +1,12 @@
 {
   "package_name": "amr_msgs",
-  "output_dir": "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_typesupport_c/amr_msgs",
+  "output_dir": "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_typesupport_c/amr_msgs",
   "template_dir": "/opt/ros/jazzy/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotPlan.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/DetectedObstacle.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/ChokeRequest.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotStatus.idl"
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotPlan.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/DetectedObstacle.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/ChokeRequest.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs:msg/RobotStatus.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
@@ -95,10 +95,10 @@
     "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
     "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/jazzy/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotPlan.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/ChokeRequest.idl",
-    "/home/neer/Desktop/SIH/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotStatus.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotPlan.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/DetectedObstacle.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/ChokeRequest.idl",
+    "/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_msgs/rosidl_adapter/amr_msgs/msg/RobotStatus.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/jazzy/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/jazzy/share/geometry_msgs/msg/Accel.idl",

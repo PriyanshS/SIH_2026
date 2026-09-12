@@ -1,0 +1,45 @@
+[0.013s] Invoking command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_nav -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav
+[0.173s] -- The C compiler identification is GNU 13.3.0
+[0.291s] -- The CXX compiler identification is GNU 13.3.0
+[0.316s] -- Detecting C compiler ABI info
+[0.423s] -- Detecting C compiler ABI info - done
+[0.430s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.430s] -- Detecting C compile features
+[0.431s] -- Detecting C compile features - done
+[0.441s] -- Detecting CXX compiler ABI info
+[0.554s] -- Detecting CXX compiler ABI info - done
+[0.562s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.562s] -- Detecting CXX compile features
+[0.562s] -- Detecting CXX compile features - done
+[0.594s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.786s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.880s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.044s] -- Configuring done (1.0s)
+[1.047s] -- Generating done (0.0s)
+[1.049s] -- Build files have been written to: /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav
+[1.056s] Invoked command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/piyansh46/Code/SIH_2026/ros2_ws/src/amr_nav -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav
+[1.057s] Invoking command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav -- -j12 -l12
+[1.114s] Invoked command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav -- -j12 -l12
+[1.115s] Invoking command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav
+[1.123s] -- Install configuration: ""
+[1.124s] -- Execute custom install script
+[1.124s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/config/nav2_params.yaml
+[1.134s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/maps/warehouse_map.pgm
+[1.145s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/maps/warehouse_map.yaml
+[1.155s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/launch/robot_nav.launch.py
+[1.167s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/ament_index/resource_index/package_run_dependencies/amr_nav
+[1.180s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/ament_index/resource_index/parent_prefix_path/amr_nav
+[1.192s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/environment/ament_prefix_path.sh
+[1.203s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/environment/ament_prefix_path.dsv
+[1.214s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/environment/path.sh
+[1.224s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/environment/path.dsv
+[1.235s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/local_setup.bash
+[1.245s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/local_setup.sh
+[1.255s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/local_setup.zsh
+[1.266s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/local_setup.dsv
+[1.278s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/package.dsv
+[1.289s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/ament_index/resource_index/packages/amr_nav
+[1.301s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/cmake/amr_navConfig.cmake
+[1.312s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/cmake/amr_navConfig-version.cmake
+[1.326s] -- Symlinking: /home/piyansh46/Code/SIH_2026/ros2_ws/install/amr_nav/share/amr_nav/package.xml
+[1.338s] Invoked command in '/home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/piyansh46/Code/SIH_2026/ros2_ws/build/amr_nav

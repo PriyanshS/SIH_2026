@@ -70,7 +70,7 @@ A fully **decentralized** coordination system where robots communicate directly 
 
 ## Quick Start
 
-See [RUNNING.md](RUNNING.md) for complete setup and run instructions.
+See [RUNNING_AND_DEMO_GUIDE.md](../docs/guides/RUNNING_AND_DEMO_GUIDE.md) for complete setup and run instructions.
 
 ## Demo Scenario
 
@@ -88,12 +88,13 @@ ros2_ws/src/
 ├── amr_msgs/          # Custom ROS 2 messages (RobotPlan, DetectedObstacle, ChokeRequest)
 ├── amr_gazebo/        # Gazebo world, robot models, bridges
 ├── amr_nav/           # Nav2 configuration and per-robot nav launch
-├── amr_coordination/  # All coordination nodes (Python)
+├── amr_coordination/  # All coordination nodes (Python) & web bridge node
 └── amr_bringup/       # Top-level launch files
 ```
 
 ## Architecture & Technical Documentation
 
-- See [ALGORITHMS_AND_BACKEND.md](ALGORITHMS_AND_BACKEND.md) for an in-depth breakdown of all algorithms, mathematical formulations, backend infrastructure, and decision-making logic.
-- See [EDITING.md](EDITING.md) for detailed architecture, engineering assumptions, shortcuts, and extensibility notes.
-- See [RUNNING.md](RUNNING.md) for setup, execution, RViz dispatching, and live demo instructions.
+- See [ALGORITHMS_AND_BACKEND.md](../docs/architecture/ALGORITHMS_AND_BACKEND.md) for an in-depth breakdown of all algorithms, mathematical formulations, backend infrastructure, and decision-making logic.
+- See [SYSTEM_DESIGN_AND_DECISIONS.md](../docs/architecture/SYSTEM_DESIGN_AND_DECISIONS.md) for detailed architecture, engineering assumptions, shortcuts, and extensibility notes.
+- See [RUNNING_AND_DEMO_GUIDE.md](../docs/guides/RUNNING_AND_DEMO_GUIDE.md) for setup, execution, RViz dispatching, and live demo instructions.
+
