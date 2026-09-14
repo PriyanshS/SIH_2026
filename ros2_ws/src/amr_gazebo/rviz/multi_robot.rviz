@@ -4,13 +4,13 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Warehouse Map1
         - /Global Options1
+        - /Warehouse Map1
         - /Robot 1 Pose (Red)1
         - /Robot 2 Pose (Green)1
         - /Robot 3 Pose (Blue)1
-      Splitter Ratio: 0.6
-    Tree Height: 550
+      Splitter Ratio: 0.6000000238418579
+    Tree Height: 287
   - Class: rviz_common/Views
     Expanded:
       - /Current View1
@@ -19,7 +19,9 @@ Panels:
 Visualization Manager:
   Class: ""
   Displays:
-    - Alpha: 0.7
+    - Alpha: 0.699999988079071
+      Binary representation: false
+      Binary threshold: 100
       Class: rviz_default_plugins/Map
       Color Scheme: map
       Draw Behind: true
@@ -41,63 +43,66 @@ Visualization Manager:
       Use Timestamp: false
       Value: true
     - Alpha: 1
-      Axes Length: 0.6
-      Axes Radius: 0.04
+      Axes Length: 0.6000000238418579
+      Axes Radius: 0.03999999910593033
       Class: rviz_default_plugins/Pose
       Color: 255; 40; 40
       Enabled: true
       Head Length: 0.25
-      Head Radius: 0.12
+      Head Radius: 0.11999999731779099
       Name: Robot 1 Pose (Red)
       Shaft Length: 0.5
-      Shaft Radius: 0.05
+      Shaft Radius: 0.05000000074505806
       Shape: Arrow
       Topic:
         Depth: 5
         Durability Policy: Volatile
+        Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /robot1/ground_truth_pose
       Value: true
     - Alpha: 1
-      Axes Length: 0.6
-      Axes Radius: 0.04
+      Axes Length: 0.6000000238418579
+      Axes Radius: 0.03999999910593033
       Class: rviz_default_plugins/Pose
       Color: 40; 220; 40
       Enabled: true
       Head Length: 0.25
-      Head Radius: 0.12
+      Head Radius: 0.11999999731779099
       Name: Robot 2 Pose (Green)
       Shaft Length: 0.5
-      Shaft Radius: 0.05
+      Shaft Radius: 0.05000000074505806
       Shape: Arrow
       Topic:
         Depth: 5
         Durability Policy: Volatile
+        Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /robot2/ground_truth_pose
       Value: true
     - Alpha: 1
-      Axes Length: 0.6
-      Axes Radius: 0.04
+      Axes Length: 0.6000000238418579
+      Axes Radius: 0.03999999910593033
       Class: rviz_default_plugins/Pose
       Color: 40; 120; 255
       Enabled: true
       Head Length: 0.25
-      Head Radius: 0.12
+      Head Radius: 0.11999999731779099
       Name: Robot 3 Pose (Blue)
       Shaft Length: 0.5
-      Shaft Radius: 0.05
+      Shaft Radius: 0.05000000074505806
       Shape: Arrow
       Topic:
         Depth: 5
         Durability Policy: Volatile
+        Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /robot3/ground_truth_pose
       Value: true
-    - Alpha: 0.8
+    - Alpha: 0.800000011920929
       Class: rviz_default_plugins/Polygon
       Color: 255; 40; 40
       Enabled: true
@@ -105,11 +110,12 @@ Visualization Manager:
       Topic:
         Depth: 5
         Durability Policy: Volatile
+        Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /robot1/local_costmap/published_footprint
       Value: true
-    - Alpha: 0.8
+    - Alpha: 0.800000011920929
       Class: rviz_default_plugins/Polygon
       Color: 40; 220; 40
       Enabled: true
@@ -117,11 +123,12 @@ Visualization Manager:
       Topic:
         Depth: 5
         Durability Policy: Volatile
+        Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /robot2/local_costmap/published_footprint
       Value: true
-    - Alpha: 0.8
+    - Alpha: 0.800000011920929
       Class: rviz_default_plugins/Polygon
       Color: 40; 120; 255
       Enabled: true
@@ -129,6 +136,7 @@ Visualization Manager:
       Topic:
         Depth: 5
         Durability Policy: Volatile
+        Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /robot3/local_costmap/published_footprint
@@ -148,12 +156,14 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
+      Max Intensity: 4096
       Min Color: 0; 0; 0
+      Min Intensity: 0
       Name: Robot 1 Scan (Red)
       Position Transformer: XYZ
       Selectable: false
       Size (Pixels): 4
-      Size (m): 0.06
+      Size (m): 0.05999999865889549
       Style: Flat Squares
       Topic:
         Depth: 5
@@ -180,12 +190,14 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
+      Max Intensity: 4096
       Min Color: 0; 0; 0
+      Min Intensity: 0
       Name: Robot 2 Scan (Green)
       Position Transformer: XYZ
       Selectable: false
       Size (Pixels): 4
-      Size (m): 0.06
+      Size (m): 0.05999999865889549
       Style: Flat Squares
       Topic:
         Depth: 5
@@ -212,12 +224,14 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
+      Max Intensity: 4096
       Min Color: 0; 0; 0
+      Min Intensity: 0
       Name: Robot 3 Scan (Blue)
       Position Transformer: XYZ
       Selectable: false
       Size (Pixels): 4
-      Size (m): 0.06
+      Size (m): 0.05999999865889549
       Style: Flat Squares
       Topic:
         Depth: 5
@@ -234,11 +248,11 @@ Visualization Manager:
       Class: rviz_default_plugins/Path
       Color: 255; 40; 40
       Enabled: true
-      Head Diameter: 0.15
-      Head Length: 0.15
-      Length: 0.3
+      Head Diameter: 0.15000000596046448
+      Head Length: 0.15000000596046448
+      Length: 0.30000001192092896
       Line Style: Lines
-      Line Width: 0.06
+      Line Width: 0.05999999865889549
       Name: Robot 1 Plan (Red)
       Offset:
         X: 0
@@ -246,9 +260,9 @@ Visualization Manager:
         Z: 0
       Pose Color: 255; 85; 255
       Pose Style: None
-      Radius: 0.03
-      Shaft Diameter: 0.1
-      Shaft Length: 0.1
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -262,11 +276,11 @@ Visualization Manager:
       Class: rviz_default_plugins/Path
       Color: 40; 220; 40
       Enabled: true
-      Head Diameter: 0.15
-      Head Length: 0.15
-      Length: 0.3
+      Head Diameter: 0.15000000596046448
+      Head Length: 0.15000000596046448
+      Length: 0.30000001192092896
       Line Style: Lines
-      Line Width: 0.06
+      Line Width: 0.05999999865889549
       Name: Robot 2 Plan (Green)
       Offset:
         X: 0
@@ -274,9 +288,9 @@ Visualization Manager:
         Z: 0
       Pose Color: 255; 85; 255
       Pose Style: None
-      Radius: 0.03
-      Shaft Diameter: 0.1
-      Shaft Length: 0.1
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -290,11 +304,11 @@ Visualization Manager:
       Class: rviz_default_plugins/Path
       Color: 40; 120; 255
       Enabled: true
-      Head Diameter: 0.15
-      Head Length: 0.15
-      Length: 0.3
+      Head Diameter: 0.15000000596046448
+      Head Length: 0.15000000596046448
+      Length: 0.30000001192092896
       Line Style: Lines
-      Line Width: 0.06
+      Line Width: 0.05999999865889549
       Name: Robot 3 Plan (Blue)
       Offset:
         X: 0
@@ -302,9 +316,9 @@ Visualization Manager:
         Z: 0
       Pose Color: 255; 85; 255
       Pose Style: None
-      Radius: 0.03
-      Shaft Diameter: 0.1
-      Shaft Length: 0.1
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
       Topic:
         Depth: 5
         Durability Policy: Volatile
@@ -320,14 +334,97 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-      Marker Alpha: 1
-      Marker Scale: 0.4
+        map:
+          Value: true
+        robot1/base_link:
+          Value: true
+        robot1/camera_link:
+          Value: true
+        robot1/caster:
+          Value: true
+        robot1/caster_front:
+          Value: true
+        robot1/imu_link:
+          Value: true
+        robot1/lidar_link:
+          Value: true
+        robot1/odom:
+          Value: true
+        robot2/base_link:
+          Value: true
+        robot2/camera_link:
+          Value: true
+        robot2/caster:
+          Value: true
+        robot2/caster_front:
+          Value: true
+        robot2/imu_link:
+          Value: true
+        robot2/lidar_link:
+          Value: true
+        robot2/odom:
+          Value: true
+        robot3/base_link:
+          Value: true
+        robot3/camera_link:
+          Value: true
+        robot3/caster:
+          Value: true
+        robot3/caster_front:
+          Value: true
+        robot3/imu_link:
+          Value: true
+        robot3/lidar_link:
+          Value: true
+        robot3/odom:
+          Value: true
+        warehouse:
+          Value: true
+      Marker Scale: 0.4000000059604645
       Name: TF
       Show Arrows: false
       Show Axes: true
       Show Names: true
       Tree:
-        {}
+        map:
+          robot1/odom:
+            robot1/base_link:
+              robot1/camera_link:
+                {}
+              robot1/caster:
+                {}
+              robot1/caster_front:
+                {}
+              robot1/imu_link:
+                {}
+              robot1/lidar_link:
+                {}
+          robot2/odom:
+            robot2/base_link:
+              robot2/camera_link:
+                {}
+              robot2/caster:
+                {}
+              robot2/caster_front:
+                {}
+              robot2/imu_link:
+                {}
+              robot2/lidar_link:
+                {}
+          robot3/odom:
+            robot3/base_link:
+              robot3/camera_link:
+                {}
+              robot3/caster:
+                {}
+              robot3/caster_front:
+                {}
+              robot3/imu_link:
+                {}
+              robot3/lidar_link:
+                {}
+          warehouse:
+            {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -366,29 +463,55 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 22.0
+      Distance: 22
       Enable Stereo Rendering:
-        Stereo Eye Separation: 0.06
+        Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 10.0
+        X: 10
         Y: 7.5
-        Z: 0.0
+        Z: 0
       Focal Shape Fixed Size: true
-      Focal Shape Size: 0.05
+      Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
-      Near Clip Distance: 0.01
-      Pitch: 1.4
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 1.399999976158142
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz_default_plugins)
-      Yaw: 0.0
-    Saved: ~
+      Yaw: 0
+    Saved:
+      - Class: rviz_default_plugins/Orbit
+        Distance: 22
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: 10
+          Y: 7.5
+          Z: 0
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: Orbit
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 1.399999976158142
+        Target Frame: <Fixed Frame>
+        Value: Orbit (rviz_default_plugins)
+        Yaw: 0
 Window Geometry:
   Displays:
     collapsed: false
   Height: 880
   Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000001c900000312fc0200000002fb000000100044006900730070006c006100790073010000003f000001d7000000cc00fffffffb0000000a00560069006500770073010000021c00000135000000a900ffffff000003a90000031200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
   Width: 1400
+  X: 50
+  Y: 82
